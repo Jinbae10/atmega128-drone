@@ -1,0 +1,23 @@
+# KiCad·MCP 자동 백업, 로컬 상태
+.history/
+.mcp-backups/
+*-backups/
+*.bak
+*.kicad_prl
+fp-info-cache
+*.lck
+_autosave-*
+_unrouted_debug.*
+
+# AVR 빌드 산출물
+Debug/
+Release/
+*.o
+*.elf
+*.hex
+*.map
+*.lss
+*.eep
+
+# Office 잠금 파일
+~$*

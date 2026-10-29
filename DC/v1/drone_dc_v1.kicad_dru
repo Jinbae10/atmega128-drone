@@ -1,0 +1,4 @@
+(version 1)
+# THT GND pins keep thermal relief (hand soldering); one resolved spoke is accepted where tracks crowd the pin
+(rule "thermal_spokes"
+  (constraint min_resolved_spokes 1))
