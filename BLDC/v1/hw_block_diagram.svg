@@ -3,10 +3,13 @@
     <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#000"/>
     </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
   </defs>
   <rect width="2000" height="1590" fill="#fff"/>
 
-  <text x="32" y="62" font-size="38" font-weight="bold">HW 블록도</text>
+  <text x="32" y="62" font-size="38" font-weight="bold">HW 블록도 (BLDC v1)</text>
 
   <g fill="none" stroke="#000" stroke-width="4">
     <!-- IMU -->
@@ -28,7 +31,7 @@
     <rect x="840" y="490" width="290" height="290" rx="30" stroke-width="7"/>
     <rect x="870" y="520" width="230" height="230" rx="14"/>
     <path stroke-width="9" d="M873,465V490M928,465V490M984,465V490M1040,465V490M1095,465V490M873,780V805M928,780V805M984,780V805M1040,780V805M1095,780V805M813,523H840M813,579H840M813,635H840M813,690H840M813,746H840M1130,523H1157M1130,579H1157M1130,635H1157M1130,690H1157M1130,746H1157"/>
-    <!-- Motor driver -->
+    <!-- ESC -->
     <rect x="1365" y="555" width="205" height="160" rx="14"/>
     <!-- Motors -->
     <circle cx="1810" cy="350" r="55"/><circle cx="1810" cy="540" r="55"/>
@@ -36,17 +39,31 @@
     <path d="M1570,635H1650M1650,350V920"/>
     <!-- Battery -->
     <rect x="237" y="1015" width="143" height="73" rx="8"/>
-    <!-- Battery connector (no power switch: unplug to turn off) -->
+    <!-- Battery connector (unplug to turn off) -->
     <path d="M392,1052H603"/>
     <!-- Regulator -->
     <rect x="666" y="1013" width="158" height="78" rx="8"/>
+    <!-- 5V switch -->
+    <path d="M824,1052H884M896,1048L938,1024"/>
+    <circle cx="890" cy="1052" r="6"/><circle cx="946" cy="1052" r="6"/>
     <!-- Voltage divider -->
-    <path d="M309,1015V888H475L485,872L500,904L515,872L530,904L545,872L555,888H745V690"/>
+    <path d="M309,1015V888H475L485,872L500,904L515,872L530,904L545,872L555,888H873"/>
     <path d="M603,888V905L587,915L619,930L587,945L619,960L603,970V995M580,995H626M588,1007H618M596,1019H610"/>
   </g>
   <rect x="380" y="1040" width="12" height="24" fill="#000"/>
   <circle cx="603" cy="888" r="6"/>
   <circle cx="603" cy="1052" r="6"/>
+  <circle cx="852" cy="1052" r="6" fill="#555"/>
+
+  <!-- Backup wired link: AR-UART2USB -->
+  <g fill="none" stroke="#555" stroke-width="4">
+    <rect x="550" y="650" width="170" height="80" rx="10"/>
+    <path d="M360,602V690H540" marker-end="url(#g)"/>
+    <path d="M720,690H805" marker-end="url(#g)" stroke-dasharray="4 8"/>
+  </g>
+
+  <!-- Optional ESC BEC feed -->
+  <path d="M1400,720V1140H852V1060" fill="none" stroke="#555" stroke-width="4" stroke-dasharray="14 10" marker-end="url(#g)"/>
 
   <!-- Signal arrows -->
   <g fill="none" stroke="#000" stroke-width="4" marker-end="url(#a)">
@@ -55,11 +72,11 @@
     <path d="M415,500H533" stroke-dasharray="14 10" marker-start="url(#a)"/>
     <path d="M708,500H805" marker-start="url(#a)"/>
     <path d="M415,590H805" stroke-dasharray="14 10"/>
-    <path d="M745,690H805"/>
+    <path d="M873,888V818"/>
     <path d="M1162,635H1355"/>
     <path d="M1650,350H1745M1650,540H1745M1650,730H1745M1650,920H1745"/>
     <path d="M548,1052H655"/>
-    <path d="M824,1052H984V818"/>
+    <path d="M952,1052H984V818"/>
     <path d="M603,1052V1215H1468V728"/>
   </g>
 
@@ -67,19 +84,22 @@
     <text x="597" y="199" font-weight="bold">IMU</text>
     <text x="620" y="497" font-weight="bold">HC-06</text>
     <text x="620" y="528" font-size="20">Bluetooth</text>
-    <text x="985" y="626" font-size="46">ATMEGA</text>
-    <text x="985" y="686" font-size="46">128A</text>
-    <text x="1468" y="618" font-weight="bold">MOSFET ×4</text>
-    <text x="1468" y="652" font-size="22">SI2302</text>
-    <text x="1468" y="684" font-size="20">+ SS14 다이오드</text>
+    <text x="635" y="686" font-size="22" font-weight="bold" fill="#555">AR-UART2USB</text>
+    <text x="635" y="714" font-size="19" fill="#555">CP2102 (대여)</text>
+    <text x="985" y="610" font-size="46">ATMEGA</text>
+    <text x="985" y="670" font-size="46">128A</text>
+    <text x="985" y="712" font-size="20">AT128A-70B 모듈</text>
+    <text x="1468" y="618" font-weight="bold">4-in-1 ESC</text>
+    <text x="1468" y="652" font-size="20">모델 조사 중</text>
+    <text x="1468" y="684" font-size="20">2S 입력 지원 필수</text>
     <text x="1810" y="362" font-size="34" font-weight="bold">M</text>
     <text x="1810" y="552" font-size="34" font-weight="bold">M</text>
     <text x="1810" y="742" font-size="34" font-weight="bold">M</text>
     <text x="1810" y="932" font-size="34" font-weight="bold">M</text>
     <text x="282" y="1062" font-size="30">−</text>
     <text x="343" y="1062" font-size="30">+</text>
-    <text x="745" y="1047" font-weight="bold">MT3608</text>
-    <text x="745" y="1077" font-size="20">5V 승압</text>
+    <text x="745" y="1047" font-weight="bold">MP1584</text>
+    <text x="745" y="1077" font-size="20">5V 강압</text>
   </g>
 
   <g font-size="24">
@@ -89,45 +109,54 @@
     <text x="1130" y="208" fill="#555" font-size="20">Ultrasonic Altitude (보유)</text>
     <text x="735" y="385" text-anchor="middle">I²C (PD0/PD1)</text>
     <text x="1003" y="350">Trig / Echo</text>
-    <text x="1003" y="380" fill="#555" font-size="20">(ICP / INT4–7)</text>
+    <text x="1003" y="380" fill="#555" font-size="20">(PE5 / PE4 INT4)</text>
     <text x="474" y="482" text-anchor="middle" font-size="20">Bluetooth</text>
     <text x="756" y="482" text-anchor="middle" font-size="22">USART1</text>
     <text x="756" y="530" text-anchor="middle" fill="#555" font-size="18">(PD2/PD3)</text>
+    <text x="620" y="572" text-anchor="middle" fill="#555" font-size="18">RX 입력 분압 (5V → 3.3V)</text>
     <text x="610" y="622" text-anchor="middle">JTAG (개발용)</text>
     <text x="277" y="645" text-anchor="middle">Laptop</text>
     <text x="277" y="673" text-anchor="middle" fill="#555" font-size="20">(Tera Term)</text>
-    <text x="120" y="790" fill="#555" font-size="19">백업 통신: RS-232C-USB 변환 모듈 (유선, USART1 공용)</text>
-    <text x="648" y="668" text-anchor="middle">Battery Voltage</text>
-    <text x="648" y="712" text-anchor="middle" fill="#555" font-size="20">(ADC PF0)</text>
-    <text x="1260" y="615" text-anchor="middle">PWM ×4</text>
-    <text x="1260" y="665" text-anchor="middle" fill="#555" font-size="20">(Timer1 / Timer3)</text>
-    <text x="1468" y="505" text-anchor="middle">Motor Driver</text>
-    <text x="1468" y="535" text-anchor="middle" fill="#555" font-size="19">(로직 레벨 N-MOSFET, 저측 스위칭)</text>
-    <text x="1810" y="245" text-anchor="middle">4 × 8520 Coreless</text>
-    <text x="1810" y="275" text-anchor="middle" fill="#555" font-size="20">(Brushed DC, 65mm 프로펠러)</text>
+    <text x="450" y="680" text-anchor="middle" fill="#555" font-size="20">USB</text>
+    <text x="763" y="676" text-anchor="middle" fill="#555" font-size="16">TTL 200mm</text>
+    <text x="130" y="772" fill="#555" font-size="20">백업 통신: 블루투스가 안 되면 HC-06을 뽑고</text>
+    <text x="130" y="800" fill="#555" font-size="20">모듈 USART 커넥터에 유선 연결 (USART1 공용, 동시 연결 금지)</text>
+    <text x="860" y="845" text-anchor="end">Battery Voltage</text>
+    <text x="860" y="872" text-anchor="end" fill="#555" font-size="20">(ADC PF0)</text>
+    <text x="1260" y="600" text-anchor="middle">PWM ×4</text>
+    <text x="1260" y="665" text-anchor="middle" fill="#555" font-size="20">(PB5·PB6·PB7·PE3)</text>
+    <text x="1468" y="505" text-anchor="middle">ESC</text>
+    <text x="1468" y="535" text-anchor="middle" fill="#555" font-size="19">(PCB 밖, 프레임에 장착)</text>
+    <text x="1705" y="330" text-anchor="middle" fill="#555" font-size="20">3상</text>
+    <text x="1810" y="245" text-anchor="middle">4 × BLDC</text>
+    <text x="1810" y="275" text-anchor="middle" fill="#555" font-size="20">(모델 조사 중)</text>
     <text x="1885" y="358">M1</text>
     <text x="1885" y="548">M2</text>
     <text x="1885" y="738">M3</text>
     <text x="1885" y="928">M4</text>
     <text x="460" y="945" text-anchor="middle">Voltage Divider</text>
-    <text x="309" y="1125" text-anchor="middle">1S LiPo</text>
-    <text x="309" y="1153" text-anchor="middle" fill="#555" font-size="20">(3.7V 660mAh)</text>
-    <text x="505" y="1092" text-anchor="middle">PH2.0 (뽑아서 OFF)</text>
+    <text x="460" y="973" text-anchor="middle" fill="#555" font-size="20">(10k / 10k)</text>
+    <text x="309" y="1125" text-anchor="middle">2S LiPo</text>
+    <text x="309" y="1153" text-anchor="middle" fill="#555" font-size="20">(7.4V, 450mAh급 후보)</text>
+    <text x="490" y="1092" text-anchor="middle" font-size="22">XT30 (뽑아서 OFF)</text>
     <text x="745" y="1125" text-anchor="middle">Regulator</text>
-    <text x="745" y="1153" text-anchor="middle" fill="#555" font-size="20">(1S → 5V)</text>
+    <text x="745" y="1153" text-anchor="middle" fill="#555" font-size="20">(2S → 5V)</text>
+    <text x="918" y="1012" text-anchor="middle">SW1</text>
+    <text x="866" y="1090" fill="#555" font-size="19">5V 전원 스위치</text>
     <text x="1003" y="945">5V</text>
     <text x="1003" y="975" fill="#555" font-size="19">→ MCU · IMU · HC-SR04 · HC-06</text>
-    <text x="1035" y="1198" text-anchor="middle">Motor Power (1S 직결)</text>
+    <text x="1130" y="1128" text-anchor="middle" fill="#555" font-size="20">ESC BEC 5V: 있으면 MP1584 생략</text>
+    <text x="1035" y="1198" text-anchor="middle">Motor Power (2S 직결, PCB 안 지남)</text>
   </g>
 
   <!-- 동작 흐름 -->
   <line x1="32" y1="1270" x2="1968" y2="1270" stroke="#000" stroke-width="2"/>
   <text x="32" y="1322" font-size="30" font-weight="bold">동작 흐름</text>
   <g font-size="22">
-    <text x="40" y="1370">① 조종: Tera Term 키 입력 → Bluetooth(HC-06) → USART1 수신 — 스로틀 증감, 긴급 정지, 생존 신호</text>
+    <text x="40" y="1370">① 조종: Tera Term 키 입력 → Bluetooth(HC-06), 안 되면 AR-UART2USB 유선 → USART1 수신 — 스로틀 증감, 긴급 정지, 생존 신호</text>
     <text x="40" y="1410">② 자세 제어 (빠른 루프, 수백 Hz): IMU를 I²C로 읽기 → 상보 필터로 각도 계산 → Roll / Pitch / Yaw PID</text>
-    <text x="40" y="1450">③ 고도 측정 (느린 루프): HC-SR04에 Trig 펄스 → Echo 폭을 입력 캡처로 측정 → 필터 후 고도 계산</text>
-    <text x="40" y="1490">④ 출력: 스로틀 + PID 보정값 → PWM ×4 듀티 → SI2302 스위칭 → 8520 모터 회전수 조절</text>
+    <text x="40" y="1450">③ 고도 측정 (느린 루프): HC-SR04에 Trig 펄스 → Echo 폭을 외부 인터럽트로 측정 → 필터 후 고도 계산</text>
+    <text x="40" y="1490">④ 출력: 스로틀 + PID 보정값 → PWM ×4 → ESC → BLDC 모터 회전수 조절</text>
     <text x="40" y="1530">⑤ 감시: 배터리 전압(ADC PF0) · 고도를 주기적으로 송신, 생존 신호가 끊기면 모터 정지 (페일세이프)</text>
   </g>
 </svg>

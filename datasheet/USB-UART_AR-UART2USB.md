@@ -1,6 +1,6 @@
 # AR-UART2USB 매뉴얼 (Manual Ver 1.5)
 
-> 출처: `AR_UART2USB.pdf` — Ahramsoft (www.ahramsoft.com)
+> 출처: `USB-UART_AR-UART2USB.pdf` — Ahramsoft (www.ahramsoft.com)
 
 ## 1. 모델 이름
 AR-UART2USB
