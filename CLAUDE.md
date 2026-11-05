@@ -1,15 +1,55 @@
-# 프로젝트 맥락
-작업 전 노션 페이지를 먼저 읽을 것: https://app.notion.com/p/4085b14adfeb8144a6ffe57df8584b89
-노션과 이 파일이 충돌하면 노션이 기준.
+# CLAUDE.md — ATmega128 블루투스 쿼드콥터 드론
 
-# 코드 전용 정보
-- 빌드/실행: 아래 "환경"의 재생성 순서 참고 (펌웨어는 미착수)
-- 디렉터리 구조: 아래 "파일 구성" 참고
+> **이 파일과 노션 [🧠 CLAUDE.md](https://app.notion.com/p/4085b14adfeb8144a6ffe57df8584b89)는 같은 내용이다. 한쪽을 바꾸면 다른 쪽도 같이 바꾼다.**
+> 작업 전 노션 페이지를 먼저 읽고, 둘이 어긋나면 노션을 기준으로 맞춘다. 상세 계획·부품은 `drone_term_project.md`.
 
-# CLAUDE.md
+## 프로젝트 개요
+| 항목 | 내용 |
+|---|---|
+| 과제 | ATmega128A 마이크로프로세서 텀 프로젝트 (2인 자유 작품, 팀원: 김채운, 배성진) |
+| 작품 | 노트북(Tera Term)에서 블루투스(HC-06)로 수동 조종하는 쿼드콥터 드론. 유선(AR-UART2USB) 백업 |
+| 평가 | 난이도·완성도. 기계보다 전자(회로·제어)에 초점 |
+| 예산 | 지원 5만원, 초과분 사비 |
+| 목표 동작 | 모두 기본 구현: 수평 유지 → 상승·하강 → 전진·제자리 회전(Yaw) |
 
-ATmega128A 마이크로프로세서 텀 프로젝트 — 노트북(Tera Term)에서 블루투스로 조종하는 쿼드콥터 드론 (2인).
-전체 계획·부품·결정 사항은 [drone_term_project.md](drone_term_project.md)가 기준 문서다. 결정이 바뀌면 그 문서를 함께 고친다.
+## 현재 상태
+- 부품 확정
+- **모터를 BLDC로 변경** — 모터·ESC·배터리·전원 상세는 정리 예정
+- PCB: BLDC 기준으로 새로 설계 (브러시드 DC PCB 프로젝트는 삭제)
+- 펌웨어: 미착수
+
+## 다음 할 일
+- PCB 주문 전 실측: 모듈 좌우 핀 줄 간격(현재 22.86mm 추정), HC-06 핀 순서, 배터리 JST PH 극성, 보드 무게
+- 프레임 모델 확정 및 출력, 무게·추력 확인
+- 명령 프로토콜(키 배정·텔레메트리), 제어 구조(PID·고도 루프 주기), 페일세이프 세부 결정
+- 확인 필요: Tera Term 매크로 실행 중 수동 키 동시 송신 여부
+- 결정 필요: 통신 끊김 시 즉시 정지 vs 서서히 하강
+- 제안서: 예산표, 역할 분담, 일정, 표지 팀원 이름
+
+## 하드웨어 제약 (꼭 지킬 것)
+- MCU 16MHz, 5V 전원 (대여 AT128A-70B V2.0 모듈, ATmega128A)
+- **PF4–PF7은 JTAG** → ADC는 PF0–PF3만. 퓨즈 변경 금지 (JTAGEN/SPIEN)
+- **USART1 = PD2(RXD1)/PD3(TXD1)** — 모듈 USART 커넥터, HC-06, AR-UART2USB 공용. RS-232C 없음. INT2/INT3 사용 불가
+- I²C(TWI) = PD0/PD1 (MPU-6050)
+- ISP는 PB2/PB3가 아니라 **PE0(PDI)/PE1(PDO)** + PB1(SCK) (사용 금지 핀)
+- 보율 9600/19200만 (16MHz에서 115200은 오차 -3.5%)
+- 대여 모듈은 납땜·개조 금지, 암헤더로 탈착
+- HC-06 RX는 3.3V → TXD1 출력은 1kΩ/2kΩ 분압
+- 총무게·추력 기준은 BLDC 구동계 확정 후 다시 정한다 (기존 8520 기준 75g은 폐기)
+
+## 작업 규칙
+- 답변·문서는 한국어
+- 이 파일을 바꾸면 노션 🧠 CLAUDE.md도 같은 내용으로 바꾼다
+- 결정이 바뀌면 `drone_term_project.md`, 해당 노션 문서 페이지, 아래 「결정 기록」을 함께 고친다
+- 부품값·핀 할당을 바꾸면 회로도와 `drone_term_project.md`를 같이 맞춘다
+- `.history/`, `.mcp-backups/`, `*.bak`는 KiCad·MCP 자동 백업 — 편집 금지
+
+## 환경·기술 스택
+- 펌웨어: AVR Studio 4.19 + WinAVR-20100110 (avr-gcc 구버전 — 최신 C 문법 주의), JTAG ICE, Tera Term
+- 센서·통신: MPU-6050(GY-521, I²C), HC-SR04, HC-06, 배터리 전압 ADC
+- 제어: 상보 필터 + 3축 PID
+- 프레임: 공개 STL을 학교 3D 프린터로 출력
+- PCB: KiCad (`D:/app/kicad`), kicad MCP 사용 가능
 
 ## 파일 구성
 | 경로 | 내용 |
@@ -18,43 +58,23 @@ ATmega128A 마이크로프로세서 텀 프로젝트 — 노트북(Tera Term)에
 | `hw_block_diagram.svg` | 시스템 블록도 |
 | `AT128A-70B_V20_data.md/.pdf` | 대여 MCU 모듈(AT128A-70B V2.0) 매뉴얼 — 핀맵, 회로도 요약 |
 | `AR_UART2USB.md/.pdf` | USB-UART 변환 모듈(CP2102) 매뉴얼 — 유선 백업 통신 |
-| `DC/` | 브러시드 DC 버전 KiCad 프로젝트 (채택안) |
-| `DC/v0/` | 초기 DC 설계 (ATmega128 직접 실장안, 보관용) |
-| `DC/v1/` | 현재 DC 설계 — AT128A-70B 모듈 암헤더 장착 |
-| `DC/v1/gen_sch.py` | DC v1 회로도(`drone_dc_v1.kicad_sch`)를 KiCad 기본 라이브러리로 생성하는 스크립트 |
-| `DC/v1/gen_fp.py` | 모듈 풋프린트(`drone_dc_v1.pretty`) 생성 — 모듈 핀 줄 간격 `ROW_SPACING` |
-| `DC/v1/gen_pcb.py` | PCB 생성: 배치 → Freerouting 자동 배선 → GND 폴리곤 (KiCad python으로 실행) |
-| `DC/v1/gerber/` | 제작용 거버·드릴 (PCB 재생성 후 다시 출력해야 함) |
-| `DC/v2/` | v1과 같은 회로, **스루홀(THT) 부품** PCB (세워 꽂는 1/4W 저항·1N5819, 디스크/전해 커패시터) 60×100mm. 스크립트 구조는 v1과 동일 |
-| `DC/v3/v3_plan.md` | v3 계획 — 1020 7.4V 모터 + 2S 배터리 (추력 부족 대응, 미착수) |
-| `BLDC/` | BLDC 버전 KiCad 프로젝트 (비교용, 미채택) |
+| `BLDC/` | 초기 비교용 BLDC KiCad 프로젝트 (채택에 맞춰 재검토 필요) |
 
-`.history/`, `.mcp-backups/`, `*.bak`는 KiCad·MCP 자동 백업이다. 편집하지 말 것.
+## 결정 기록
+| 항목 | 결정 | 날짜·상태 |
+|---|---|---|
+| DC PCB | 브러시드 DC PCB 프로젝트(`DC/` v0–v3) 삭제. 필요하면 git 커밋 `fc0194f`에서 복구 | 2026-11-06 |
+| 통신 | **블루투스(HC-06) 유지.** 약 5m UART 유선안을 검토했으나 철회. 유선 백업은 AR-UART2USB, RS-232C는 대여받지 않아 쓰지 않음 | 2026-11-05 |
+| 모터 | **BLDC 채택.** 브러시드 DC·SI2302·MT3608·v3 항목을 대체. 구동계 상세는 문서 > 부품에 정리 예정 | 2026-10-30 |
+| v3 전환 | 1020 7.4V 모터 + 2S (추력 부족) | 2026-10-20, BLDC로 대체 |
+| 동작 범위 | 수동 조종만, 동작 4가지 모두 기본 구현 | 2026-10-18 |
+| 페일세이프 | Tera Term 매크로 생존 신호, 끊기면 기체 측 정지 | 유효 |
+| 모터(초기) | BLDC 대신 브러시드 DC(8520 코어리스 ×4) — 예산 안, 구동 회로 직접 설계로 전자 중심 방향에 맞음 | BLDC로 대체 |
+| 모터 구동 | SI2302 저측 스위칭 + SS14 환류, PWM 직접 구동 (PB5/PB6/PB7 OC1A/B/C, PE3 OC3A) | BLDC로 대체 |
+| 전원 | 1S LiPo + MT3608 승압 5V, 모터는 배터리 직결. 전원 스위치 없음(커넥터 탈착) | BLDC로 대체 |
 
-## 환경
-- 펌웨어: AVR Studio 4.19 + WinAVR-20100110 (avr-gcc, 구버전 — 최신 C 문법 주의), JTAG ICE
-- PCB: KiCad (`D:/app/kicad`), kicad MCP 사용 가능
-- `gen_sch.py`는 경로가 하드코딩되어 있다(`LIB`, `OUT`). 실행: `python DC/v1/gen_sch.py`
-- 전체 재생성 순서 (v2도 같음, 경로만 `DC/v2`): `python DC/v1/gen_fp.py` → `python DC/v1/gen_sch.py` → `D:/app/kicad/bin/python.exe DC/v1/gen_pcb.py`
-  → `kicad-cli pcb drc` → `kicad-cli pcb export gerbers` / `export drill` (출력 폴더 `DC/v1/gerber/`)
-- PCB 배선 방식 (`gen_pcb.py`): 전원(VBAT·모터 루프·MOSFET 소스)은 `power_routes()`에서 좌표로 직접 배선(고정),
-  GND는 자동 배선하지 않고 양면 폴리곤 + 패드별 GND 비아(배선 전 fan-out) + 스티칭/섬 비아로 연결,
-  Freerouting은 신호·+5V만 배선하며 뒷면 비용을 높여(`RULES`) 뒷면을 GND 플레인으로 유지한다
-- Freerouting 결과는 입력에 따라 민감하다. 미배선이 남으면 `_unrouted_debug.kicad_pcb`로 저장되니 DRC로 원인 확인
-- `drone_dc_v1.kicad_dru`: THT GND 핀의 서멀 스포크 최소 1개 허용 (손납땜용 서멀 릴리프 유지)
-- pcbnew python 주의: `BOARD.Remove()` 후 SWIG 객체가 깨진다 → 매번 `NewBoard`로 새로 만들고, 풋프린트는 보드 작업 전에 미리 로드
-
-## 하드웨어 제약 (꼭 지킬 것)
-- MCU 16MHz, 5V 전원 (1S LiPo → MT3608 승압). 모터는 배터리 직결 + SI2302 저측 스위칭
-- **PF4–PF7은 JTAG** → ADC는 PF0–PF3만. 퓨즈 변경 금지 (JTAGEN/SPIEN)
-- **USART1 = PD2(RXD1)/PD3(TXD1)** — 모듈 USART 커넥터, HC-06, AR-UART2USB 공용. INT2/INT3 사용 불가
-- I²C(TWI) = PD0/PD1 (MPU-6050)
-- ISP는 PB2/PB3가 아니라 **PE0(PDI)/PE1(PDO)** + PB1(SCK)
-- 보율 9600/19200만 (16MHz에서 115200은 오차 -3.5%)
-- 대여 모듈은 납땜·개조 금지, 암헤더로 탈착
-- HC-06 RX는 3.3V → TXD1 출력은 1kΩ/2kΩ 분압
-- 총무게 약 75g 이하 (8520 ×4 추력 기준)
-
-## 작업 규칙
-- 답변·문서는 한국어
-- 부품값·핀 할당을 바꾸면 회로도와 `drone_term_project.md`를 같이 맞춘다
+## 노션 구조
+- 메인: [ATmega128 블루투스 쿼드콥터 드론](https://app.notion.com/p/4085b14adfeb81c1ad5bf372026f9886) — 링크 카드 + 작업 보드(할 일: 이름·담당자·상태·날짜)
+- [프로젝트 소개](https://app.notion.com/p/4085b14adfeb81e1a462e1f805651429): 개요·시스템 구성·제어 루프·목표 동작
+- [컨벤션](https://app.notion.com/p/4085b14adfeb812ea506eb72b7653acd): 코드·KiCad·Git·문서 규칙 — 작업 전 확인
+- [문서](https://app.notion.com/p/4085b14adfeb810bafeef9f1a6e82b36): 부품 · 데이터시트 · PCB 디자인 · 펌웨어·제어 · 통신·조종 · 작업일지 · 자료 · 트러블슈팅 DB
