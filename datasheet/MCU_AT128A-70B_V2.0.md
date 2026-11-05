@@ -1,6 +1,6 @@
 # AT128A-70B V2.0 매뉴얼 (ATmega128A-AU MCU, Manual Ver 2.0)
 
-> 출처: `AT128A-70B_V20_data.pdf` — 엠에이아이 (www.maicom.co.kr)
+> 출처: `MCU_AT128A-70B_V2.0.pdf` — 엠에이아이 (www.maicom.co.kr)
 
 ## 1. 모델 이름
 AT128A-70B V2.0 (ATmega128A-AU **브레드보드 타입**)
@@ -65,7 +65,7 @@ ATmega128A-AU MCU의 학습 및 개발용 브레드보드 타입 MCU 보드. USA
 | 녹색 전원 LED | 전원 확인 |
 
 ## 6. AR-UART2USB 연결
-보드 상단 USART 커넥터에 AR-UART2USB의 4핀 하네스 케이블을 꽂고, USB로 PC에 연결한다. (상세: [AR_UART2USB.md](AR_UART2USB.md))
+보드 상단 USART 커넥터에 AR-UART2USB의 4핀 하네스 케이블을 꽂고, USB로 PC에 연결한다. (상세: [USB-UART_AR-UART2USB.md](USB-UART_AR-UART2USB.md))
 
 ## 7. 회로도 요약
 
