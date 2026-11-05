@@ -1,2 +1,0 @@
-(fp_lib_table (version 7)
-  (lib (name "drone_dc_v1")(type "KiCad")(uri "${KIPRJMOD}/drone_dc_v1.pretty")(options "")(descr "drone DC v1 modules")))
