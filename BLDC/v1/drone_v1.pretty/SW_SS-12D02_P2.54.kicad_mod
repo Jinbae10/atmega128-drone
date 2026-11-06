@@ -1,0 +1,76 @@
+(footprint "SW_SS-12D02_P2.54"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "SS-12D02 slide switch SPDT THT, UNVERIFIED pitch/lugs (body 8.7x4.5 from third-party variant). Measure part before fabrication.")
+  (tags "slide switch SPDT measure-before-fab")
+
+  (property "Reference" "REF**" (at 0 -3.3 0)
+    (layer "F.SilkS")
+    (uuid "aa4580b2-a366-4311-a95f-13ac8a4f41cb")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "SW_SS-12D02_P2.54" (at 0 3.3 0)
+    (layer "F.Fab")
+    (uuid "507a0706-aa92-4eb9-a4b5-4f19a30c2413")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "27d0f8f4-7e1e-40c9-a304-8f681b2e73a0")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -4.6 -2.5)
+    (end 4.6 2.5)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "1b42acbc-26a2-44db-b383-4405f5bec5a1")
+  )
+
+  (fp_rect
+    (start -4.45 -2.35)
+    (end 4.45 2.35)
+    (stroke (width 0.12) (type default))
+    (fill none)
+    (layer "F.SilkS")
+    (uuid "51d5b15b-9e41-470f-ac25-283cf1991a07")
+  )
+
+  (fp_rect
+    (start -4.35 -2.25)
+    (end 4.35 2.25)
+    (stroke (width 0.1) (type default))
+    (fill none)
+    (layer "F.Fab")
+    (uuid "72b48354-c40e-4db3-b4cb-a49bd135fe00")
+  )
+
+  (pad "1" thru_hole oval
+    (at -2.54 0)
+    (size 1.5 2.2)
+    (drill 0.9)
+    (layers "*.Cu" "*.Mask")
+    (uuid "0f54d8d6-7cd7-413c-b559-d52fdb5d21e2")
+  )
+
+  (pad "2" thru_hole oval
+    (at 0 0)
+    (size 1.5 2.2)
+    (drill 0.9)
+    (layers "*.Cu" "*.Mask")
+    (uuid "7d57a38d-06ae-4c19-93c5-5f9dd30e6227")
+  )
+
+  (pad "3" thru_hole oval
+    (at 2.54 0)
+    (size 1.5 2.2)
+    (drill 0.9)
+    (layers "*.Cu" "*.Mask")
+    (uuid "28dd0e2f-5a8d-4182-8991-9082453fcf53")
+  )
+
+)
