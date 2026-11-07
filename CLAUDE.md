@@ -124,7 +124,7 @@
 | `datasheet/MCU_AT128A-70B_V2.0.md/.pdf` | 대여 MCU 모듈(AT128A-70B V2.0) 매뉴얼 — 핀맵, 회로도 요약 |
 | `datasheet/USB-UART_AR-UART2USB.md/.pdf` | USB-UART 변환 모듈(CP2102) 매뉴얼 — 유선 백업 통신 |
 | `BLDC/v0/` | BLDC KiCad 프로젝트 (채택에 맞춰 재검토 필요) |
-| `BLDC/v1/` | KiCad 프로젝트 `drone_v1.*`(회로도·PCB·풋프린트), 회로도 PDF, 부품 목록 `parts_list.md`, 블록도 `hw_block_diagram.svg`. `pcb_sketch.svg`는 2S 시절 구버전. `gerber/`는 거버·드릴 시안(실측 반영 후 재출력) |
+| `BLDC/v1/` | KiCad 프로젝트 `drone_v1.*`(회로도·PCB·풋프린트), 회로도 PDF, 부품 목록 `parts_list.md`, 블록도 `hw_block_diagram.svg`, PCB 그림 `images/`(3D 렌더·동박면). `pcb_sketch.svg`는 2S 시절 구버전. `gerber/`는 거버·드릴 시안(실측 반영 후 재출력) |
 
 ## 결정 기록
 | 항목 | 결정 | 날짜·상태 |
