@@ -2046,1350 +2046,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "drone_v1:AT128A_Socket_L1"
-			(pin_names
-				(offset 0.5)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AT128A_L1"
-				(at 0 22.86 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "AT128A-70B socket L 1-15"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AT128A_Socket_L1_0_1"
-				(rectangle
-					(start -10.16 19.05)
-					(end 10.16 -19.05)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AT128A_Socket_L1_1_1"
-				(pin passive line
-					(at -12.7 17.78 0)
-					(length 2.54)
-					(name "L1_/PEN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 15.240000000000002 0)
-					(length 2.54)
-					(name "L2_PE0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 12.700000000000001 0)
-					(length 2.54)
-					(name "L3_PE1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 10.16 0)
-					(length 2.54)
-					(name "L4_PE2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 7.620000000000001 0)
-					(length 2.54)
-					(name "L5_PE3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 5.080000000000002 0)
-					(length 2.54)
-					(name "L6_PE4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 2.540000000000001 0)
-					(length 2.54)
-					(name "L7_PE5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 0.0 0)
-					(length 2.54)
-					(name "L8_PE6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -2.539999999999999 0)
-					(length 2.54)
-					(name "L9_PE7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -5.079999999999998 0)
-					(length 2.54)
-					(name "L10_VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -7.619999999999997 0)
-					(length 2.54)
-					(name "L11_PB0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -10.16 0)
-					(length 2.54)
-					(name "L12_PB1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -12.7 0)
-					(length 2.54)
-					(name "L13_PB2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -15.240000000000002 0)
-					(length 2.54)
-					(name "L14_PB3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -17.78 0)
-					(length 2.54)
-					(name "L15_PB4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "drone_v1:AT128A_Socket_L2"
-			(pin_names
-				(offset 0.5)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AT128A_L2"
-				(at 0 22.86 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "AT128A-70B socket L 16-30"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AT128A_Socket_L2_0_1"
-				(rectangle
-					(start -10.16 19.05)
-					(end 10.16 -19.05)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AT128A_Socket_L2_1_1"
-				(pin passive line
-					(at -12.7 17.78 0)
-					(length 2.54)
-					(name "L16_PB5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 15.240000000000002 0)
-					(length 2.54)
-					(name "L17_PB6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 12.700000000000001 0)
-					(length 2.54)
-					(name "L18_PB7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 10.16 0)
-					(length 2.54)
-					(name "L19_PG3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 7.620000000000001 0)
-					(length 2.54)
-					(name "L20_PG4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 5.080000000000002 0)
-					(length 2.54)
-					(name "L21_GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 2.540000000000001 0)
-					(length 2.54)
-					(name "L22_PD0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 0.0 0)
-					(length 2.54)
-					(name "L23_PD1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -2.539999999999999 0)
-					(length 2.54)
-					(name "L24_PD2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -5.079999999999998 0)
-					(length 2.54)
-					(name "L25_PD3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -7.619999999999997 0)
-					(length 2.54)
-					(name "L26_PD4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -10.16 0)
-					(length 2.54)
-					(name "L27_PD5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -12.7 0)
-					(length 2.54)
-					(name "L28_PD6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -15.240000000000002 0)
-					(length 2.54)
-					(name "L29_PD7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -17.78 0)
-					(length 2.54)
-					(name "L30_EMPTY"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "drone_v1:AT128A_Socket_R1"
-			(pin_names
-				(offset 0.5)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AT128A_R1"
-				(at 0 22.86 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "AT128A-70B socket R 1-15"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AT128A_Socket_R1_0_1"
-				(rectangle
-					(start -10.16 19.05)
-					(end 10.16 -19.05)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AT128A_Socket_R1_1_1"
-				(pin passive line
-					(at -12.7 17.78 0)
-					(length 2.54)
-					(name "R1_PF0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 15.240000000000002 0)
-					(length 2.54)
-					(name "R2_PF1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 12.700000000000001 0)
-					(length 2.54)
-					(name "R3_PF2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 10.16 0)
-					(length 2.54)
-					(name "R4_PF3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 7.620000000000001 0)
-					(length 2.54)
-					(name "R5_PF4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 5.080000000000002 0)
-					(length 2.54)
-					(name "R6_PF5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 2.540000000000001 0)
-					(length 2.54)
-					(name "R7_PF6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 0.0 0)
-					(length 2.54)
-					(name "R8_PF7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -2.539999999999999 0)
-					(length 2.54)
-					(name "R9_/RST"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -5.079999999999998 0)
-					(length 2.54)
-					(name "R10_GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -7.619999999999997 0)
-					(length 2.54)
-					(name "R11_PA0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -10.16 0)
-					(length 2.54)
-					(name "R12_PA1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -12.7 0)
-					(length 2.54)
-					(name "R13_PA2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -15.240000000000002 0)
-					(length 2.54)
-					(name "R14_PA3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -17.78 0)
-					(length 2.54)
-					(name "R15_PA4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "drone_v1:AT128A_Socket_R2"
-			(pin_names
-				(offset 0.5)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AT128A_R2"
-				(at 0 22.86 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "AT128A-70B socket R 16-30"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AT128A_Socket_R2_0_1"
-				(rectangle
-					(start -10.16 19.05)
-					(end 10.16 -19.05)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AT128A_Socket_R2_1_1"
-				(pin passive line
-					(at -12.7 17.78 0)
-					(length 2.54)
-					(name "R16_PA5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 15.240000000000002 0)
-					(length 2.54)
-					(name "R17_PA6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 12.700000000000001 0)
-					(length 2.54)
-					(name "R18_PA7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 10.16 0)
-					(length 2.54)
-					(name "R19_PG2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 7.620000000000001 0)
-					(length 2.54)
-					(name "R20_PG1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 5.080000000000002 0)
-					(length 2.54)
-					(name "R21_PG0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 2.540000000000001 0)
-					(length 2.54)
-					(name "R22_PC7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 0.0 0)
-					(length 2.54)
-					(name "R23_PC6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -2.539999999999999 0)
-					(length 2.54)
-					(name "R24_PC5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -5.079999999999998 0)
-					(length 2.54)
-					(name "R25_PC4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -7.619999999999997 0)
-					(length 2.54)
-					(name "R26_PC3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -10.16 0)
-					(length 2.54)
-					(name "R27_PC2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -12.7 0)
-					(length 2.54)
-					(name "R28_PC1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -15.240000000000002 0)
-					(length 2.54)
-					(name "R29_PC0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -17.78 0)
-					(length 2.54)
-					(name "R30_EMPTY"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:PWR_FLAG"
 			(power global)
 			(pin_numbers
@@ -3505,6 +2161,76 @@
 			)
 			(embedded_fonts no)
 		)
+(symbol "drone_v1:AT128A-70B" (pin_names (offset 0.5)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (at 0 39.37 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "AT128A-70B" (at 0 -39.37 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "drone_v1:AT128A-70B_Socket" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Description" "AT128A-70B V2.0 MCU module socket, 29 pin x 2" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "AT128A-70B_0_1"
+      (rectangle (start -17.78 38.1) (end 17.78 -38.1) (stroke (width 0.254) (type default)) (fill (type background)))
+    )
+    (symbol "AT128A-70B_1_1"
+      (pin passive line (at -20.32 35.56 0) (length 2.54) (name "/PEN" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 35.56 180) (length 2.54) (name "PF0" (effects (font (size 1.27 1.27)))) (number "30" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 33.02 0) (length 2.54) (name "PE0" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 33.02 180) (length 2.54) (name "PF1" (effects (font (size 1.27 1.27)))) (number "31" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 30.48 0) (length 2.54) (name "PE1" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 30.48 180) (length 2.54) (name "PF2" (effects (font (size 1.27 1.27)))) (number "32" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 27.94 0) (length 2.54) (name "PE2" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 27.94 180) (length 2.54) (name "PF3" (effects (font (size 1.27 1.27)))) (number "33" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 25.40 0) (length 2.54) (name "PE3" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 25.40 180) (length 2.54) (name "PF4" (effects (font (size 1.27 1.27)))) (number "34" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 22.86 0) (length 2.54) (name "PE4" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 22.86 180) (length 2.54) (name "PF5" (effects (font (size 1.27 1.27)))) (number "35" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 20.32 0) (length 2.54) (name "PE5" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 20.32 180) (length 2.54) (name "PF6" (effects (font (size 1.27 1.27)))) (number "36" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 17.78 0) (length 2.54) (name "PE6" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 17.78 180) (length 2.54) (name "PF7" (effects (font (size 1.27 1.27)))) (number "37" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 15.24 0) (length 2.54) (name "PE7" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 15.24 180) (length 2.54) (name "/RST" (effects (font (size 1.27 1.27)))) (number "38" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 12.70 0) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 12.70 180) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "39" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 10.16 0) (length 2.54) (name "PB0" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 10.16 180) (length 2.54) (name "PA0" (effects (font (size 1.27 1.27)))) (number "40" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 7.62 0) (length 2.54) (name "PB1" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 7.62 180) (length 2.54) (name "PA1" (effects (font (size 1.27 1.27)))) (number "41" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 5.08 0) (length 2.54) (name "PB2" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 5.08 180) (length 2.54) (name "PA2" (effects (font (size 1.27 1.27)))) (number "42" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 2.54 0) (length 2.54) (name "PB3" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 2.54 180) (length 2.54) (name "PA3" (effects (font (size 1.27 1.27)))) (number "43" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 0.00 0) (length 2.54) (name "PB4" (effects (font (size 1.27 1.27)))) (number "15" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 0.00 180) (length 2.54) (name "PA4" (effects (font (size 1.27 1.27)))) (number "44" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -2.54 0) (length 2.54) (name "PB5" (effects (font (size 1.27 1.27)))) (number "16" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -2.54 180) (length 2.54) (name "PA5" (effects (font (size 1.27 1.27)))) (number "45" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -5.08 0) (length 2.54) (name "PB6" (effects (font (size 1.27 1.27)))) (number "17" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -5.08 180) (length 2.54) (name "PA6" (effects (font (size 1.27 1.27)))) (number "46" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -7.62 0) (length 2.54) (name "PB7" (effects (font (size 1.27 1.27)))) (number "18" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -7.62 180) (length 2.54) (name "PA7" (effects (font (size 1.27 1.27)))) (number "47" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -10.16 0) (length 2.54) (name "PG3" (effects (font (size 1.27 1.27)))) (number "19" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -10.16 180) (length 2.54) (name "PG2" (effects (font (size 1.27 1.27)))) (number "48" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -12.70 0) (length 2.54) (name "PG4" (effects (font (size 1.27 1.27)))) (number "20" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -12.70 180) (length 2.54) (name "PG1" (effects (font (size 1.27 1.27)))) (number "49" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -15.24 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "21" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -15.24 180) (length 2.54) (name "PG0" (effects (font (size 1.27 1.27)))) (number "50" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -17.78 0) (length 2.54) (name "PD0" (effects (font (size 1.27 1.27)))) (number "22" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -17.78 180) (length 2.54) (name "PC7" (effects (font (size 1.27 1.27)))) (number "51" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -20.32 0) (length 2.54) (name "PD1" (effects (font (size 1.27 1.27)))) (number "23" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -20.32 180) (length 2.54) (name "PC6" (effects (font (size 1.27 1.27)))) (number "52" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -22.86 0) (length 2.54) (name "PD2" (effects (font (size 1.27 1.27)))) (number "24" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -22.86 180) (length 2.54) (name "PC5" (effects (font (size 1.27 1.27)))) (number "53" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -25.40 0) (length 2.54) (name "PD3" (effects (font (size 1.27 1.27)))) (number "25" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -25.40 180) (length 2.54) (name "PC4" (effects (font (size 1.27 1.27)))) (number "54" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -27.94 0) (length 2.54) (name "PD4" (effects (font (size 1.27 1.27)))) (number "26" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -27.94 180) (length 2.54) (name "PC3" (effects (font (size 1.27 1.27)))) (number "55" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -30.48 0) (length 2.54) (name "PD5" (effects (font (size 1.27 1.27)))) (number "27" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -30.48 180) (length 2.54) (name "PC2" (effects (font (size 1.27 1.27)))) (number "56" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -33.02 0) (length 2.54) (name "PD6" (effects (font (size 1.27 1.27)))) (number "28" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -33.02 180) (length 2.54) (name "PC1" (effects (font (size 1.27 1.27)))) (number "57" (effects (font (size 1.27 1.27)))))
+(pin passive line (at -20.32 -35.56 0) (length 2.54) (name "PD7" (effects (font (size 1.27 1.27)))) (number "29" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 20.32 -35.56 180) (length 2.54) (name "PC0" (effects (font (size 1.27 1.27)))) (number "58" (effects (font (size 1.27 1.27)))))
+    )
+  )
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
@@ -6034,478 +4760,6 @@
 		)
 	)
 	(symbol
-		(lib_id "drone_v1:AT128A_Socket_L1")
-		(at 279.4 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8b60459a-6abc-457f-9ec7-5a4b9c0fb4cf")
-		(property "Reference" "J6"
-			(at 279.4 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AT128A_L1-15"
-			(at 279.4 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
-			(at 279.4 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 279.4 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "AT128A-70B socket L 1-15"
-			(at 279.4 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f1f95d39-8a25-48b4-a030-aeb4d5a29af0")
-		)
-		(pin "10"
-			(uuid "df13df4f-3676-4271-a41d-3c04ca93069c")
-		)
-		(pin "11"
-			(uuid "16eb345f-c22a-4a19-990a-a3e350822f7a")
-		)
-		(pin "12"
-			(uuid "0b740300-468a-4eba-ad56-f9b9f82a382f")
-		)
-		(pin "13"
-			(uuid "84075581-2afc-4045-8286-0a92ba0d4b93")
-		)
-		(pin "14"
-			(uuid "aab599e6-b188-45b7-b86f-ab2286689c5e")
-		)
-		(pin "15"
-			(uuid "76963b4d-9a41-4411-a487-863630abbf9a")
-		)
-		(pin "2"
-			(uuid "5e4a1568-2a12-4ddb-85a8-13c7a8615b64")
-		)
-		(pin "3"
-			(uuid "1df2a11c-734b-4dd8-9c99-69258b994b06")
-		)
-		(pin "4"
-			(uuid "56c6c16c-f5b7-4a2c-961d-25b93406055c")
-		)
-		(pin "5"
-			(uuid "dfc913c6-75f8-4f6c-ae5b-f23e4997cc97")
-		)
-		(pin "6"
-			(uuid "7272086b-f5b8-417a-8c2b-ae10d16e7a37")
-		)
-		(pin "7"
-			(uuid "a6f786c0-7a06-4eab-bfae-22c779a2cfe6")
-		)
-		(pin "8"
-			(uuid "fe8f0fb1-c20b-4e73-916a-9ecc90cfe64e")
-		)
-		(pin "9"
-			(uuid "d6c5e21e-ab00-47ca-ac06-8836e57e5710")
-		)
-		(instances
-			(project "drone_v1"
-				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "drone_v1:AT128A_Socket_L2")
-		(at 360.68 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "46d8e309-4895-4f9f-a592-49e9e1c82ddb")
-		(property "Reference" "J7"
-			(at 360.68 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AT128A_L16-30"
-			(at 360.68 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
-			(at 360.68 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 360.68 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "AT128A-70B socket L 16-30"
-			(at 360.68 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4962f8d8-776a-4771-b328-42c0795fd14c")
-		)
-		(pin "10"
-			(uuid "f70ce9eb-de8c-493e-9af2-f8523136c5bc")
-		)
-		(pin "11"
-			(uuid "34f8d237-4815-43c4-95bc-beff85b1516b")
-		)
-		(pin "12"
-			(uuid "4d77893e-ffb9-44ef-8056-2524fc4605a6")
-		)
-		(pin "13"
-			(uuid "ab23321f-1456-4955-9619-82b5824ab3fa")
-		)
-		(pin "14"
-			(uuid "ee1f3e58-9d66-4369-be35-9cdbf2deb2c1")
-		)
-		(pin "15"
-			(uuid "cc90bada-9f60-4f91-b00e-fa3724f5620c")
-		)
-		(pin "2"
-			(uuid "81e18b75-2ee9-45f5-bd74-09e431db4250")
-		)
-		(pin "3"
-			(uuid "ad0a2394-dbd7-4e71-8f70-5c1bb70a6db8")
-		)
-		(pin "4"
-			(uuid "dbc2b52d-90b0-415f-98e2-91ff7a5501cc")
-		)
-		(pin "5"
-			(uuid "c858a61f-0aa8-45c0-a6c7-5d7e3a85dcd7")
-		)
-		(pin "6"
-			(uuid "358687a5-1383-487c-912b-f205c8334d0f")
-		)
-		(pin "7"
-			(uuid "4504ff0a-4866-4505-88df-55f39bc115dc")
-		)
-		(pin "8"
-			(uuid "c013afce-6338-4413-bff7-c1368fc58690")
-		)
-		(pin "9"
-			(uuid "80b51287-526c-422c-9fa8-b51ee0199a82")
-		)
-		(instances
-			(project "drone_v1"
-				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "drone_v1:AT128A_Socket_R1")
-		(at 279.4 177.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "23463d26-c04c-47e4-a719-c7ca19dc84a7")
-		(property "Reference" "J8"
-			(at 279.4 157.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AT128A_R1-15"
-			(at 279.4 156.20999999999998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
-			(at 279.4 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 279.4 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "AT128A-70B socket R 1-15"
-			(at 279.4 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f43a4d3d-8a99-4380-9c7a-0458e30b7a1c")
-		)
-		(pin "10"
-			(uuid "32732368-c6ca-485e-abcb-a0f27584c605")
-		)
-		(pin "11"
-			(uuid "4058f2c2-e0f7-4e98-9a41-535672bca1d4")
-		)
-		(pin "12"
-			(uuid "d70bcce8-a31d-4808-b7dc-8059a112faf0")
-		)
-		(pin "13"
-			(uuid "80f028b8-d112-4f24-bac1-68f8eb5cb9f9")
-		)
-		(pin "14"
-			(uuid "57c44814-bc88-41b4-9518-047ebcf92e9b")
-		)
-		(pin "15"
-			(uuid "ade9ed9d-e96d-4fa6-a45b-eb17c8336f42")
-		)
-		(pin "2"
-			(uuid "c4465045-e340-442f-a303-5af8fc150e48")
-		)
-		(pin "3"
-			(uuid "e06f3f5d-48e2-4971-a500-639408a53b26")
-		)
-		(pin "4"
-			(uuid "0f967f90-277b-4447-b193-0382ae462001")
-		)
-		(pin "5"
-			(uuid "d8f8f956-85fa-4b3c-985a-31fd605c29fc")
-		)
-		(pin "6"
-			(uuid "7d07d355-7240-473b-875c-630e82526e62")
-		)
-		(pin "7"
-			(uuid "f719252f-cdd1-42b6-815b-aeadbf9e692f")
-		)
-		(pin "8"
-			(uuid "b53be16f-fb0d-4257-bbd6-c3dc6d8bae40")
-		)
-		(pin "9"
-			(uuid "d2b49be6-d826-4eb7-8632-94a1f1c6f37d")
-		)
-		(instances
-			(project "drone_v1"
-				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "drone_v1:AT128A_Socket_R2")
-		(at 360.68 177.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4b5a5a5f-b44b-4fbf-b6d7-a51eba8f40f6")
-		(property "Reference" "J9"
-			(at 360.68 157.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AT128A_R16-30"
-			(at 360.68 156.20999999999998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
-			(at 360.68 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 360.68 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "AT128A-70B socket R 16-30"
-			(at 360.68 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5e496869-2fce-4642-a463-25d9e6cf7d36")
-		)
-		(pin "10"
-			(uuid "4c663413-8a6b-480a-982f-065562266612")
-		)
-		(pin "11"
-			(uuid "9a6cb657-2094-429a-babb-b6b2f2e1c7d2")
-		)
-		(pin "12"
-			(uuid "4f236ea0-3ce9-4864-927f-e2b3805302d4")
-		)
-		(pin "13"
-			(uuid "e074f101-828a-4bf5-b453-48569b82b619")
-		)
-		(pin "14"
-			(uuid "55a4a7be-ac77-4e8f-82e4-abd23f344540")
-		)
-		(pin "15"
-			(uuid "d74ab3ab-da2a-4f9f-a4ce-6068a8166234")
-		)
-		(pin "2"
-			(uuid "139fc460-a678-4521-b899-f4a10a52ed84")
-		)
-		(pin "3"
-			(uuid "cc1f8e8a-ea01-492f-9d79-69c15b45a46b")
-		)
-		(pin "4"
-			(uuid "37ee7529-88f3-4e6e-a722-43a8f5aabca9")
-		)
-		(pin "5"
-			(uuid "2b879554-41f9-4d82-b606-7e6099f65b47")
-		)
-		(pin "6"
-			(uuid "bd34dc69-7bf3-4995-a4fd-1c9d8e963c67")
-		)
-		(pin "7"
-			(uuid "1a118df4-76a1-4896-9925-df1a9633629b")
-		)
-		(pin "8"
-			(uuid "7266868c-7274-4919-8b6f-469080d0453d")
-		)
-		(pin "9"
-			(uuid "43c1a337-8f78-4b36-b6d2-a8a71769a7f2")
-		)
-		(instances
-			(project "drone_v1"
-				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
-					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 40.64 71.12 0)
 		(unit 1)
@@ -7140,7 +5394,7 @@
 		)
 		(uuid "60db6a0c-15f9-4efc-a2ea-1ed5e65b17a2")
 	)
-	(label "ESC_M1"
+	(label "ESC_M4"
 		(at 119.38 203.2 180)
 		(effects
 			(font
@@ -7150,7 +5404,7 @@
 		)
 		(uuid "e7e296db-4f25-4230-8cb1-4fc1e2f8888d")
 	)
-	(label "ESC_M2"
+	(label "ESC_M1"
 		(at 119.38 205.74 180)
 		(effects
 			(font
@@ -7160,7 +5414,7 @@
 		)
 		(uuid "39798d97-6e72-499b-95a5-af00f9099b7f")
 	)
-	(label "ESC_M3"
+	(label "ESC_M2"
 		(at 119.38 208.28 180)
 		(effects
 			(font
@@ -7170,7 +5424,7 @@
 		)
 		(uuid "347bd12e-03e4-4beb-90e7-afed0d11421a")
 	)
-	(label "ESC_M4"
+	(label "ESC_M3"
 		(at 119.38 210.82 180)
 		(effects
 			(font
@@ -7436,336 +5690,6 @@
 		(at 170.17999999999998 157.48000000000002)
 		(uuid "1c8fbff2-d221-4d11-8438-a3d88a485aa0")
 	)
-	(no_connect
-		(at 266.7 58.42)
-		(uuid "01ae8026-1a7d-4472-9f96-de6536205924")
-	)
-	(no_connect
-		(at 266.7 60.96)
-		(uuid "eb8ffec5-7e0e-4589-9008-ab3a183fb979")
-	)
-	(no_connect
-		(at 266.7 63.5)
-		(uuid "beebdd64-c26a-4797-97b9-d545d287eb71")
-	)
-	(no_connect
-		(at 266.7 66.04)
-		(uuid "a089fcbb-148b-46a2-810a-a3bd909b5cde")
-	)
-	(no_connect
-		(at 266.7 78.74000000000001)
-		(uuid "d0bf1bdc-ad1a-443e-a58c-10d749608af4")
-	)
-	(no_connect
-		(at 266.7 83.82)
-		(uuid "643f42ac-a7e3-4525-8d9a-97b02d85fad2")
-	)
-	(no_connect
-		(at 266.7 86.36)
-		(uuid "d6ef21ee-8b22-4eca-9026-bfdc044e3c63")
-	)
-	(no_connect
-		(at 266.7 88.9)
-		(uuid "85b45471-28c8-45ba-bedd-434d711294ea")
-	)
-	(no_connect
-		(at 266.7 91.44)
-		(uuid "cdc3da4c-babf-4777-8f2b-f7bbf1143f87")
-	)
-	(no_connect
-		(at 266.7 93.98)
-		(uuid "b08c8113-1dba-41da-aa20-953ea7319915")
-	)
-	(no_connect
-		(at 347.98 66.04)
-		(uuid "b640aba1-eb3d-4414-9da0-a07f2a00d517")
-	)
-	(no_connect
-		(at 347.98 68.58)
-		(uuid "c1ecef29-fa8b-42b8-96cd-9d04b63f4970")
-	)
-	(no_connect
-		(at 347.98 83.82)
-		(uuid "7bfde335-cd24-46d2-b619-d3a17c49277f")
-	)
-	(no_connect
-		(at 347.98 86.36)
-		(uuid "99028a06-e97a-40cf-9521-262a9dcbde20")
-	)
-	(no_connect
-		(at 347.98 88.9)
-		(uuid "1aa19ee3-10f6-44bd-ae6d-af20010af77a")
-	)
-	(label "PWM_M4"
-		(at 266.7 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7a393abe-d348-4cad-ac27-e5ffc13b1108")
-	)
-	(label "ECHO"
-		(at 266.7 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0fbcf82f-2dc7-4927-aed5-71424a5fa0ea")
-	)
-	(label "TRIG"
-		(at 266.7 73.66 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c0de5fd9-a4d8-4ef6-ac78-2a8f6c3e7e4d")
-	)
-	(label "IMU_INT"
-		(at 266.7 76.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6a9eb85a-dd1c-477c-a09f-b9a498757dbf")
-	)
-	(label "+5V"
-		(at 266.7 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "950408a7-62b5-4b0f-b77a-76c8836ce1d3")
-	)
-	(label "PWM_M1"
-		(at 347.98 58.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e544c745-c89f-4898-b154-af2ac350db69")
-	)
-	(label "PWM_M2"
-		(at 347.98 60.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f92a2106-530d-4095-aa65-02d3f60c34b3")
-	)
-	(label "PWM_M3"
-		(at 347.98 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "999bcb35-af34-4619-be5c-dd9eb7d6ab62")
-	)
-	(label "GND"
-		(at 347.98 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "692f6ec1-c5c8-44e6-ab36-7cfa20e134ad")
-	)
-	(label "SCL"
-		(at 347.98 73.66 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d6d876b1-8067-49f6-9058-bf5b25392924")
-	)
-	(label "SDA"
-		(at 347.98 76.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ab1a2bed-466f-4d52-8696-3758b14c2e4d")
-	)
-	(label "RXD1"
-		(at 347.98 78.74000000000001 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8085ac9c-7e61-467e-b7a0-341892484e1c")
-	)
-	(label "TXD1"
-		(at 347.98 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "27514e57-d2b0-4529-9cc3-a6497402859c")
-	)
-	(label "VBAT_SENSE"
-		(at 266.7 160.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9ab25f7b-5757-4d5d-a710-86f3e122b77a")
-	)
-	(label "GND"
-		(at 266.7 182.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a254622e-0cd0-412f-83d1-530ab9815055")
-	)
-	(no_connect
-		(at 347.98 91.44)
-		(uuid "6e6239ca-3f31-49e2-80ab-bd86a657fa17")
-	)
-	(no_connect
-		(at 347.98 93.98)
-		(uuid "24097d97-dc84-41f9-b31d-68b77139349a")
-	)
-	(no_connect
-		(at 266.7 162.56)
-		(uuid "98e28a04-298c-4032-975c-0b96c931dfbd")
-	)
-	(no_connect
-		(at 266.7 165.10000000000002)
-		(uuid "d21017b6-5b1d-4933-a5c5-bfa8a025d275")
-	)
-	(no_connect
-		(at 266.7 167.64000000000001)
-		(uuid "5fdfd70a-4c65-478e-aff9-9275afb9d488")
-	)
-	(no_connect
-		(at 266.7 170.18)
-		(uuid "13ba2ac7-e701-4730-ade0-239b298be065")
-	)
-	(no_connect
-		(at 266.7 172.72)
-		(uuid "9183339f-dfd3-406d-8b76-464bf463b9df")
-	)
-	(no_connect
-		(at 266.7 175.26000000000002)
-		(uuid "78512543-e48e-46d6-bbea-8e06f4582da7")
-	)
-	(no_connect
-		(at 266.7 177.8)
-		(uuid "6129dddf-dfb6-47fc-93f6-c244209ea983")
-	)
-	(no_connect
-		(at 266.7 180.34)
-		(uuid "53acdb3a-7a01-4aa4-85aa-9d1af8b6fe61")
-	)
-	(no_connect
-		(at 266.7 185.42000000000002)
-		(uuid "a902033b-f0a1-4ab9-95f5-316fa4d41aca")
-	)
-	(no_connect
-		(at 266.7 187.96)
-		(uuid "f175f20a-7665-4976-a33c-de1a6afb4d4a")
-	)
-	(no_connect
-		(at 266.7 190.5)
-		(uuid "60a13e1e-c3a8-4cd5-aa6a-5565d763c397")
-	)
-	(no_connect
-		(at 266.7 193.04000000000002)
-		(uuid "977ac45d-55e0-4ec8-b83d-36dbe695b007")
-	)
-	(no_connect
-		(at 266.7 195.58)
-		(uuid "434b5902-2db1-4e3a-8e5d-6fcc1870e8aa")
-	)
-	(no_connect
-		(at 347.98 160.02)
-		(uuid "e881c136-bfd6-4c3f-be78-327f9b349fc9")
-	)
-	(no_connect
-		(at 347.98 162.56)
-		(uuid "85af689c-44ca-4911-8fee-866ec7037a64")
-	)
-	(no_connect
-		(at 347.98 165.10000000000002)
-		(uuid "b3e29c1e-eb44-46a0-93e3-44cf8a5ae6a1")
-	)
-	(no_connect
-		(at 347.98 167.64000000000001)
-		(uuid "61d0d5f3-75ea-441e-97b6-17f366925bc6")
-	)
-	(no_connect
-		(at 347.98 170.18)
-		(uuid "ea9bae58-f634-4316-9cb8-0966c8b1c08f")
-	)
-	(no_connect
-		(at 347.98 172.72)
-		(uuid "4d7d99b9-4619-406c-8fe5-b3c677b533b9")
-	)
-	(no_connect
-		(at 347.98 175.26000000000002)
-		(uuid "003b0246-0746-4577-9f50-9422e5d4030e")
-	)
-	(no_connect
-		(at 347.98 177.8)
-		(uuid "cd4f1a51-f6ec-4d80-88bd-bc65e5dd4ed7")
-	)
-	(no_connect
-		(at 347.98 180.34)
-		(uuid "1e88ac0c-8585-44d2-9f57-9d3c17d5812d")
-	)
-	(no_connect
-		(at 347.98 182.88)
-		(uuid "e6324fdb-f8e5-427c-aa90-0b9d98144806")
-	)
-	(no_connect
-		(at 347.98 185.42000000000002)
-		(uuid "511f0e59-1ea4-4ce2-ab10-e2771a0f4069")
-	)
-	(no_connect
-		(at 347.98 187.96)
-		(uuid "2be3f4f8-ffcf-465b-b4f8-60b3c4446cb5")
-	)
-	(no_connect
-		(at 347.98 190.5)
-		(uuid "2b4f6259-a90f-4728-897a-8030e4852670")
-	)
-	(no_connect
-		(at 347.98 193.04000000000002)
-		(uuid "d7ee3312-8290-45c3-84c7-3fe0af19ddb1")
-	)
-	(no_connect
-		(at 347.98 195.58)
-		(uuid "8328e880-8614-41d7-b41a-f2094bde125a")
-	)
 	(label "VBAT"
 		(at 40.64 71.12 270)
 		(effects
@@ -7997,6 +5921,575 @@
 			(type default)
 		)
 		(uuid "1e212f1d-70e1-473c-8ebf-0358ffde4e90")
+	)
+	(no_connect
+		(at 279.4 73.66)
+		(uuid "a2d560f6-6f09-4b5c-8893-9d3d8fa3dda8")
+	)
+	(no_connect
+		(at 279.4 76.2)
+		(uuid "b7d0260d-9e6b-4d1d-b30b-f0db6e587ca5")
+	)
+	(no_connect
+		(at 279.4 78.74)
+		(uuid "81d4fbc4-ee44-42a2-8733-f853fa4d7ed1")
+	)
+	(no_connect
+		(at 279.4 81.28)
+		(uuid "f929094a-6d56-4ba1-853b-fc273e55f128")
+	)
+	(label "PWM_M4"
+		(at 279.4 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "db4c1685-9410-414d-b96f-21f167458322")
+	)
+	(label "ECHO"
+		(at 279.4 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "162fdbd0-0b23-4ddf-a131-db2622da4c8b")
+	)
+	(label "TRIG"
+		(at 279.4 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "04632b0b-c137-45c9-ba18-fb07fc6bcfe5")
+	)
+	(label "IMU_INT"
+		(at 279.4 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e6727df7-4cd8-4c17-92f9-e2f87aeb36b1")
+	)
+	(no_connect
+		(at 279.4 93.98)
+		(uuid "ae1c6f63-3d76-4012-9b2a-a145ad413f7d")
+	)
+	(label "+5V"
+		(at 279.4 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e735b447-7271-4eb4-bc8b-fed29c83b7ac")
+	)
+	(no_connect
+		(at 279.4 99.06)
+		(uuid "f5652eb4-83d9-42cc-843a-280e88a5df27")
+	)
+	(no_connect
+		(at 279.4 101.6)
+		(uuid "c4945f26-752b-4e2e-8377-a634535abc85")
+	)
+	(no_connect
+		(at 279.4 104.14)
+		(uuid "7b7c6c4b-0520-4d3e-ab5c-9f1801da0ed9")
+	)
+	(no_connect
+		(at 279.4 106.68)
+		(uuid "001c97bc-97d4-48d0-904e-c51bda870f49")
+	)
+	(no_connect
+		(at 279.4 109.22)
+		(uuid "550e3fe0-2a4a-474c-a51d-98fe64ed77e0")
+	)
+	(label "PWM_M1"
+		(at 279.4 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "152e2d6d-c0e3-44b8-a945-9fcb6fc47053")
+	)
+	(label "PWM_M2"
+		(at 279.4 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2e310533-52a0-4cf8-b53b-e86a8ad4b54d")
+	)
+	(label "PWM_M3"
+		(at 279.4 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "72257008-53b2-4ad9-8eed-652f68268240")
+	)
+	(no_connect
+		(at 279.4 119.38)
+		(uuid "312e87ad-1108-48fe-8281-56caf20e9853")
+	)
+	(no_connect
+		(at 279.4 121.92)
+		(uuid "2d40cc95-23c4-423e-8664-316bd1174630")
+	)
+	(label "GND"
+		(at 279.4 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "10067034-9322-4cfb-9a5a-40b54fa2407c")
+	)
+	(label "SCL"
+		(at 279.4 127.0 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9dc3c535-34eb-47fc-8fa7-64621ace4d3c")
+	)
+	(label "SDA"
+		(at 279.4 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6e8f39d8-2911-477b-afab-d4905fa9a274")
+	)
+	(label "RXD1"
+		(at 279.4 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0abd6686-3999-4a33-8a6e-fb672e3d68fb")
+	)
+	(label "TXD1"
+		(at 279.4 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "811a2210-7e6c-40a6-9441-ddeea904c750")
+	)
+	(no_connect
+		(at 279.4 137.16)
+		(uuid "6cf8e9e3-fcfe-4617-a2ae-df97860a9b4f")
+	)
+	(no_connect
+		(at 279.4 139.7)
+		(uuid "9d1f0272-b66c-4c46-86fe-f60afc8a5f49")
+	)
+	(no_connect
+		(at 279.4 142.24)
+		(uuid "601d928b-b717-45cc-9437-fc7ed753953f")
+	)
+	(no_connect
+		(at 279.4 144.78)
+		(uuid "fd74d50a-420d-4b72-bf57-4f6d2c38c60c")
+	)
+	(label "VBAT_SENSE"
+		(at 320.04 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2499a266-d5b3-4911-9762-39ef34233947")
+	)
+	(no_connect
+		(at 320.04 76.2)
+		(uuid "7afdc088-cb21-4f39-9490-8034a2d2228c")
+	)
+	(no_connect
+		(at 320.04 78.74)
+		(uuid "a0b83e8e-3669-43ad-9d4c-bb4c867f75ba")
+	)
+	(no_connect
+		(at 320.04 81.28)
+		(uuid "109e19ca-2b23-4a80-b436-aa8a455fb166")
+	)
+	(no_connect
+		(at 320.04 83.82)
+		(uuid "0f32dd1f-7f0d-46c8-a59f-6260eaa9b101")
+	)
+	(no_connect
+		(at 320.04 86.36)
+		(uuid "fdf1f84e-95ee-482b-ac7a-58122789b9c2")
+	)
+	(no_connect
+		(at 320.04 88.9)
+		(uuid "3a046136-812d-47ab-807b-bb0204d86601")
+	)
+	(no_connect
+		(at 320.04 91.44)
+		(uuid "df49448a-897e-4d75-91e3-2ffee2df9aac")
+	)
+	(no_connect
+		(at 320.04 93.98)
+		(uuid "a428a97d-5247-40ec-be5f-4f452ec3d72a")
+	)
+	(label "GND"
+		(at 320.04 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f2bb4b34-985e-40c6-ad7f-d72b66b01cf4")
+	)
+	(no_connect
+		(at 320.04 99.06)
+		(uuid "57c15ec4-6b7c-4271-bddd-950e4aae1e04")
+	)
+	(no_connect
+		(at 320.04 101.6)
+		(uuid "cbe3b304-0067-4401-b355-f9a2bc290578")
+	)
+	(no_connect
+		(at 320.04 104.14)
+		(uuid "505a6def-723b-4eae-8181-8d1ca9a9e3ea")
+	)
+	(no_connect
+		(at 320.04 106.68)
+		(uuid "9364fc01-bddc-4b4c-abbd-8b0ee0f91955")
+	)
+	(no_connect
+		(at 320.04 109.22)
+		(uuid "5b891895-d4ca-4c3e-a6fa-9f110b50d2f8")
+	)
+	(no_connect
+		(at 320.04 111.76)
+		(uuid "f7e3768e-4ceb-4ab4-a4be-0efd953f0b20")
+	)
+	(no_connect
+		(at 320.04 114.3)
+		(uuid "0b520874-00e9-4b9b-9a29-ba1a77aa1887")
+	)
+	(no_connect
+		(at 320.04 116.84)
+		(uuid "5fc7bcdc-6e76-4ebf-aee2-60d7625ef272")
+	)
+	(no_connect
+		(at 320.04 119.38)
+		(uuid "826f2654-b0e1-49d7-bb47-04af3ca3cdf3")
+	)
+	(no_connect
+		(at 320.04 121.92)
+		(uuid "93ac9c19-6b72-4f50-9510-a0b1d56aca5a")
+	)
+	(no_connect
+		(at 320.04 124.46)
+		(uuid "73d65332-2bbb-4c6e-9432-88eae07cd85f")
+	)
+	(no_connect
+		(at 320.04 127.0)
+		(uuid "06881152-ce72-435c-a42f-bd903c39793c")
+	)
+	(no_connect
+		(at 320.04 129.54)
+		(uuid "84cb91b8-5584-41cb-94bf-b46ac9236c15")
+	)
+	(no_connect
+		(at 320.04 132.08)
+		(uuid "33f56f39-65e5-40eb-8d45-4319e27f3c5e")
+	)
+	(no_connect
+		(at 320.04 134.62)
+		(uuid "a64e872d-a39a-492f-8f7f-4a96fda05b58")
+	)
+	(no_connect
+		(at 320.04 137.16)
+		(uuid "1e613128-8f68-4cc8-a8d4-c1d999f80db4")
+	)
+	(no_connect
+		(at 320.04 139.7)
+		(uuid "d9d38812-e387-4679-a2ba-c978a8ccc73b")
+	)
+	(no_connect
+		(at 320.04 142.24)
+		(uuid "79eccdb0-9890-4e44-a620-3a358ebfe389")
+	)
+	(no_connect
+		(at 320.04 144.78)
+		(uuid "9f917fa0-f669-4810-ab5d-cd20ebf05078")
+	)
+	(symbol
+		(lib_id "drone_v1:AT128A-70B")
+		(at 299.72 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6d98d114-1287-4082-94b2-4ac5e296d35a")
+		(property "Reference" "U2"
+			(at 299.72 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AT128A-70B"
+			(at 299.72 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "drone_v1:AT128A-70B_Socket"
+			(at 299.72 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 299.72 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "AT128A-70B V2.0 MCU module socket, 29 pin x 2"
+			(at 299.72 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ed838559-68f9-41ef-b284-6170495816f8")
+		)
+		(pin "10"
+			(uuid "1f5798ba-ebe3-451a-83aa-2f2f9d7e409a")
+		)
+		(pin "11"
+			(uuid "196d4d5b-832c-4eb5-af41-300442a0604d")
+		)
+		(pin "12"
+			(uuid "81e47fd5-3c4b-4795-a798-c8641ad0dc0a")
+		)
+		(pin "13"
+			(uuid "f4dc45de-a238-4d4f-9513-6affdda164ed")
+		)
+		(pin "14"
+			(uuid "6708d6a6-8deb-475c-8515-b049d7c13c7e")
+		)
+		(pin "15"
+			(uuid "7eb2340c-7cbf-4e43-b1da-3d013a3895df")
+		)
+		(pin "16"
+			(uuid "f0de23ff-4247-41c0-af4d-0c9160c521fd")
+		)
+		(pin "17"
+			(uuid "dfd342d5-6f88-4ee1-802e-0d831eda37ec")
+		)
+		(pin "18"
+			(uuid "3a5a3ef4-dbfd-4013-b18e-ccd1ff8251d5")
+		)
+		(pin "19"
+			(uuid "10710eec-1534-4205-b109-229475019e51")
+		)
+		(pin "2"
+			(uuid "92dbf35c-37b7-43a5-a4be-6ee16d64ba33")
+		)
+		(pin "20"
+			(uuid "bd603f91-f47b-40fb-80f2-f3589a733a90")
+		)
+		(pin "21"
+			(uuid "91fa2404-fdbb-4a4f-872b-001135c6a5ca")
+		)
+		(pin "22"
+			(uuid "6dc52b7b-5abc-43fc-8f72-b5851f12b60d")
+		)
+		(pin "23"
+			(uuid "a81a1eaa-7add-46b9-9095-59066c23cbd2")
+		)
+		(pin "24"
+			(uuid "d90c4d36-4294-4e59-a732-bbae0ba75674")
+		)
+		(pin "25"
+			(uuid "55856bc3-a2ab-46f5-ab23-f1a68f5eb3f1")
+		)
+		(pin "26"
+			(uuid "15f089ea-52c5-4384-a7b9-e68217c8cc4d")
+		)
+		(pin "27"
+			(uuid "b2855c9e-3f87-40b1-a6ab-f6c25a1436a2")
+		)
+		(pin "28"
+			(uuid "e2fc438f-cb72-4775-982d-8512dcd5c1c2")
+		)
+		(pin "29"
+			(uuid "c5a96e51-e493-4ea6-be89-b7050f05f597")
+		)
+		(pin "3"
+			(uuid "800412c8-b049-4988-96fa-31f3d2dcf819")
+		)
+		(pin "30"
+			(uuid "a4765ff8-921a-41d2-99cd-33e2bcc26b9f")
+		)
+		(pin "31"
+			(uuid "a7d95903-b5f9-470a-a400-6538554ba9fd")
+		)
+		(pin "32"
+			(uuid "bcf60da3-7c3c-455f-b5fd-ed519e068ce5")
+		)
+		(pin "33"
+			(uuid "4f96e62d-648e-4ddd-9495-e9e5666478ac")
+		)
+		(pin "34"
+			(uuid "bf568f91-05ff-4fe1-bd52-854a17db7806")
+		)
+		(pin "35"
+			(uuid "eb4c944f-133d-4442-aeb1-2aff314f62d3")
+		)
+		(pin "36"
+			(uuid "f9930d1a-0fae-49da-907c-0bf2c4bf1403")
+		)
+		(pin "37"
+			(uuid "966a8a14-97a1-478b-b4ad-b3f0048a9bd4")
+		)
+		(pin "38"
+			(uuid "4df3c8be-1acf-42ba-9dcf-e365c51ac436")
+		)
+		(pin "39"
+			(uuid "3008455f-f54f-4390-92ca-82ba656e392d")
+		)
+		(pin "4"
+			(uuid "5ba02179-6aab-4396-a09c-f51847b9fc45")
+		)
+		(pin "40"
+			(uuid "1491a985-3e7e-4f84-887e-e9322d095177")
+		)
+		(pin "41"
+			(uuid "62ce6c06-161d-4971-a74e-b84406a78ef2")
+		)
+		(pin "42"
+			(uuid "c477a88f-7c6a-466d-841c-170eaaeb99e7")
+		)
+		(pin "43"
+			(uuid "c8d96035-bae6-4de1-9f34-ab5e2de2dad9")
+		)
+		(pin "44"
+			(uuid "3ee0e4d3-ecf3-4aa2-a5de-989f7234cb83")
+		)
+		(pin "45"
+			(uuid "52b30adf-9c30-4ad2-975e-929b5ea4f594")
+		)
+		(pin "46"
+			(uuid "98daa746-f824-4d7f-9b4c-d1c3c3c01d7e")
+		)
+		(pin "47"
+			(uuid "c0d8d39c-5024-4b68-ae91-8d7023cc7236")
+		)
+		(pin "48"
+			(uuid "b76288b8-4da4-4f8f-8052-50c68d274a93")
+		)
+		(pin "49"
+			(uuid "5cfe1c08-c5cb-496c-90d2-6e290c6ae685")
+		)
+		(pin "5"
+			(uuid "98046b59-3282-4efe-862c-424fd91ef413")
+		)
+		(pin "50"
+			(uuid "5e2e4a4c-e9ef-4804-8da5-1e39fcc38924")
+		)
+		(pin "51"
+			(uuid "afd30a95-901d-49aa-892a-38551d02ff8f")
+		)
+		(pin "52"
+			(uuid "f1ce5baf-4046-4b06-bdc8-62fd3293ec49")
+		)
+		(pin "53"
+			(uuid "056d1218-c348-4164-9ac8-422e5e91b3f4")
+		)
+		(pin "54"
+			(uuid "49340ea6-c2d5-41a7-a2b6-52621ba48ce5")
+		)
+		(pin "55"
+			(uuid "44257169-3924-45c1-adb4-a504081c6bd1")
+		)
+		(pin "56"
+			(uuid "bfe9cce2-4afb-435d-b88a-3deb21f56f5e")
+		)
+		(pin "57"
+			(uuid "9c42cb26-0dad-4121-92a0-77daeeb6263a")
+		)
+		(pin "58"
+			(uuid "048bfd47-bd1e-4e64-980b-78c5488f954f")
+		)
+		(pin "6"
+			(uuid "e693054c-a6ea-489e-802d-865423bfc1bc")
+		)
+		(pin "7"
+			(uuid "f1c80a4b-5d3c-43c3-8219-993f6214aaee")
+		)
+		(pin "8"
+			(uuid "6dc2bbb3-ab62-445d-b076-b1d9ecb4de59")
+		)
+		(pin "9"
+			(uuid "0d3a56b8-1328-4336-ac25-e5f4f657f7b7")
+		)
+		(instances
+			(project "drone_v1"
+				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(sheet_instances
 		(path "/"
