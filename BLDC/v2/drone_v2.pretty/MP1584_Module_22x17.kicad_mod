@@ -1,0 +1,84 @@
+(footprint "MP1584_Module_22x17"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "MP1584 buck module, UNVERIFIED pad layout (22x17 generic). Measure real VLT-VC042 before fabrication.")
+  (tags "MP1584 buck module measure-before-fab")
+
+  (property "Reference" "REF**" (at 0 -2 0)
+    (layer "F.SilkS")
+    (uuid "1f00d73b-9357-401b-a129-e1885db863c5")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "MP1584_Module_22x17" (at 0 2 0)
+    (layer "F.Fab")
+    (uuid "a0061c26-f925-43a7-b536-597fc0dc1472")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "dc0861e8-b1b5-400a-8807-e28f7487808b")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -8.75 -11.55)
+    (end 8.75 11.55)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "396e28b0-3a70-4a39-80e8-95263a1ca600")
+  )
+
+  (fp_rect
+    (start -8.6 -11.4)
+    (end 8.6 11.4)
+    (stroke (width 0.12) (type default))
+    (fill none)
+    (layer "F.SilkS")
+    (uuid "fe5b484b-5506-408a-9bd2-f153f571cc71")
+  )
+
+  (fp_rect
+    (start -8.5 -11)
+    (end 8.5 11)
+    (stroke (width 0.1) (type default))
+    (fill none)
+    (layer "F.Fab")
+    (uuid "5b0db4a9-a5aa-49ee-91c3-567d5c4ecaf4")
+  )
+
+  (pad "1" thru_hole oval
+    (at -7 9.8)
+    (size 2 2.6)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "0675c01f-cfa7-4f25-85c3-ba4ea56f9a61")
+  )
+
+  (pad "2" thru_hole oval
+    (at 7 9.8)
+    (size 2 2.6)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "a182fa00-9db9-42de-b2e6-2ab9d956d9d3")
+  )
+
+  (pad "3" thru_hole oval
+    (at -7 -9.8)
+    (size 2 2.6)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "4c1dad3b-4ba4-447d-8b1c-d0c4e0a077a5")
+  )
+
+  (pad "4" thru_hole oval
+    (at 7 -9.8)
+    (size 2 2.6)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "e40ef22a-56a0-4a72-a2d0-85e983dfac01")
+  )
+
+)
