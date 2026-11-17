@@ -5,9 +5,9 @@
 	(uuid 6256a130-b6ed-436b-88ed-f43a1c28b28a)
 	(paper "A3")
 	(title_block
-		(title "ATmega128 Quadcopter V1 - Carrier PCB")
-		(date "2026-11-06")
-		(rev "V1 draft")
+		(title "ATmega128 Quadcopter V4 - Carrier PCB (THT)")
+		(date "2026-11-17")
+		(rev "V4 draft")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
@@ -516,7 +516,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "drone_v1:MP1584_Module"
+		(symbol "drone_v4:MP1584_Module"
 			(pin_names
 				(offset 0.5)
 			)
@@ -1142,7 +1142,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "drone_v1:BAT54_SOT23"
+		(symbol "drone_v4:D_THT"
 			(pin_names
 				(offset 0.5)
 			)
@@ -1157,7 +1157,7 @@
 					)
 				)
 			)
-			(property "Value" "BAT54"
+			(property "Value" "1N4148"
 				(at 0 6.35 0)
 				(effects
 					(font
@@ -1165,7 +1165,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1183,7 +1183,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "BAT54 single Schottky SOT-23: 1=A 2=NC 3=K"
+			(property "Description" "Small-signal diode DO-35 THT: 1=K 2=A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1192,7 +1192,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BAT54_SOT23_0_1"
+			(symbol "D_THT_0_1"
 				(rectangle
 					(start -5.08 2.54)
 					(end 5.08 -2.54)
@@ -1205,7 +1205,7 @@
 					)
 				)
 			)
-			(symbol "BAT54_SOT23_1_1"
+			(symbol "D_THT_1_1"
 				(pin passive line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -1216,7 +1216,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1234,25 +1234,7 @@
 							)
 						)
 					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1497,6 +1479,193 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2175,7 +2344,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "drone_v1:AT128A-70B"
+		(symbol "drone_v4:AT128A-70B"
 			(pin_names
 				(offset 0.5)
 			)
@@ -2198,7 +2367,7 @@
 					)
 				)
 			)
-			(property "Footprint" "drone_v1:AT128A-70B_Socket"
+			(property "Footprint" "drone_v4:AT128A-70B_Socket"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3620,7 +3789,7 @@
 			(uuid "4cc418dd-0503-4a89-bc1d-42d1e6b79557")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "J1")
 					(unit 1)
@@ -3649,7 +3818,7 @@
 				)
 			)
 		)
-		(property "Value" "0.5A 24V"
+		(property "Value" "FRT050-33F 0.5A"
 			(at 78.74 59.436 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3660,7 +3829,7 @@
 				(hide no)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W3.5mm_P5.00mm"
 			(at 73.66 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -3694,7 +3863,7 @@
 				)
 			)
 		)
-		(property "MPN" "FSMD050-24-1206R"
+		(property "MPN" "FRT050-33F"
 			(at 78.74 55.88 0)
 			(effects
 				(font
@@ -3710,7 +3879,7 @@
 			(uuid "b78cac57-f6f6-4c97-82d9-dc726bd55ffd")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "F1")
 					(unit 1)
@@ -3791,7 +3960,7 @@
 			(uuid "dae42b5b-0945-41d9-a151-33416d42ca34")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "C1")
 					(unit 1)
@@ -3800,7 +3969,7 @@
 		)
 	)
 	(symbol
-		(lib_id "drone_v1:MP1584_Module")
+		(lib_id "drone_v4:MP1584_Module")
 		(at 124.46 58.42 0)
 		(unit 1)
 		(body_style 1)
@@ -3830,7 +3999,7 @@
 				)
 			)
 		)
-		(property "Footprint" "drone_v1:MP1584_Module_22x17"
+		(property "Footprint" "drone_v4:MP1584_Module_22x17"
 			(at 124.46 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -3876,7 +4045,7 @@
 			(uuid "4754eae8-128c-416c-8d5d-003a1d8833f4")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "U1")
 					(unit 1)
@@ -3957,7 +4126,7 @@
 			(uuid "534f0bf0-cdc7-4b85-8f33-66e011763194")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "C2")
 					(unit 1)
@@ -3996,7 +4165,7 @@
 				)
 			)
 		)
-		(property "Footprint" "drone_v1:SW_SS-12D02_P2.54"
+		(property "Footprint" "drone_v4:SW_SS-12D02_P2.54"
 			(at 175.26 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -4039,7 +4208,7 @@
 			(uuid "c4ca5f4b-7fb5-479e-8187-2f0441f2ef76")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "SW1")
 					(unit 1)
@@ -4059,7 +4228,7 @@
 		(dnp no)
 		(uuid "b88d2a94-5b4c-4b33-b031-f825d0932e50")
 		(property "Reference" "C3"
-			(at 321.31 158.75 0)
+			(at 321.31 158.115 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4070,7 +4239,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 321.31 160.02 0)
+			(at 321.31 160.655 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4080,7 +4249,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 318.465 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -4120,7 +4289,7 @@
 			(uuid "62440c8c-841e-4195-8b7c-8d16c01ed8b7")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "C3")
 					(unit 1)
@@ -4140,7 +4309,7 @@
 		(dnp no)
 		(uuid "77d83e5d-0044-496b-a07e-45f61a364621")
 		(property "Reference" "R1"
-			(at 341.63 97.79 0)
+			(at 341.63 97.155 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4150,7 +4319,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 341.63 99.06 0)
+			(at 341.63 99.695 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4159,7 +4328,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 336.042 97.79 90)
 			(hide yes)
 			(show_name no)
@@ -4199,7 +4368,7 @@
 			(uuid "f496f281-7501-45d1-aaca-086db2260623")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R1")
 					(unit 1)
@@ -4219,7 +4388,7 @@
 		(dnp no)
 		(uuid "b8d2d70e-c292-483d-b267-222bfd25d134")
 		(property "Reference" "R2"
-			(at 341.63 120.65 0)
+			(at 341.63 120.015 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4229,7 +4398,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 341.63 121.92 0)
+			(at 341.63 122.555 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4238,7 +4407,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 336.042 120.65 90)
 			(hide yes)
 			(show_name no)
@@ -4278,7 +4447,7 @@
 			(uuid "403f33be-0c42-412b-8501-d850b03d7a4c")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R2")
 					(unit 1)
@@ -4317,7 +4486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 322.58 114.3 90)
 			(hide yes)
 			(show_name no)
@@ -4357,7 +4526,7 @@
 			(uuid "a2458cb6-93b8-4076-ba30-0f299100fb90")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R3")
 					(unit 1)
@@ -4366,7 +4535,7 @@
 		)
 	)
 	(symbol
-		(lib_id "drone_v1:BAT54_SOT23")
+		(lib_id "drone_v4:D_THT")
 		(at 322.58 99.06 0)
 		(unit 1)
 		(body_style 1)
@@ -4386,7 +4555,7 @@
 				)
 			)
 		)
-		(property "Value" "BAT54"
+		(property "Value" "1N4148"
 			(at 322.58 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4396,7 +4565,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 322.58 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4418,7 +4587,7 @@
 				)
 			)
 		)
-		(property "Description" "BAT54 single Schottky SOT-23: 1=A 2=NC 3=K"
+		(property "Description" "Small-signal diode DO-35 THT: 1=K 2=A"
 			(at 322.58 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4429,17 +4598,14 @@
 				)
 			)
 		)
-		(pin "1"
+		(pin "2"
 			(uuid "e21ccce2-06b7-4dfa-9f4b-0696873db925")
 		)
-		(pin "2"
-			(uuid "9d541d49-342a-42da-9b0e-3d5ff62b4be8")
-		)
-		(pin "3"
+		(pin "1"
 			(uuid "a73ce84e-bcdf-4696-985d-8457bc3caa14")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "D1")
 					(unit 1)
@@ -4459,7 +4625,7 @@
 		(dnp no)
 		(uuid "95495e90-3462-4a0c-b6a3-abe3d404ac2e")
 		(property "Reference" "C4"
-			(at 306.07 120.65 0)
+			(at 306.07 120.015 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4470,7 +4636,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 306.07 121.92 0)
+			(at 306.07 122.555 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4480,7 +4646,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 303.225 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4520,7 +4686,7 @@
 			(uuid "c300f778-b4f7-4f9e-875e-0a98a1a68b25")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "C4")
 					(unit 1)
@@ -4561,7 +4727,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 188.722 158.75 90)
 			(hide yes)
 			(show_name no)
@@ -4601,7 +4767,7 @@
 			(uuid "b2055b54-2c5e-4917-8867-d55a222e2775")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R4")
 					(unit 1)
@@ -4642,7 +4808,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 188.722 173.99 90)
 			(hide yes)
 			(show_name no)
@@ -4682,7 +4848,7 @@
 			(uuid "c6ce997c-45a6-418d-a52e-26d01822661d")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R5")
 					(unit 1)
@@ -4723,7 +4889,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 188.722 189.23 90)
 			(hide yes)
 			(show_name no)
@@ -4763,7 +4929,7 @@
 			(uuid "a8dbeb50-9b42-4ea0-aedd-7ee882bdb515")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R6")
 					(unit 1)
@@ -4804,7 +4970,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 188.722 143.51 90)
 			(hide yes)
 			(show_name no)
@@ -4844,7 +5010,7 @@
 			(uuid "ab881cff-789e-469c-aad0-3876b03fcc86")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R7")
 					(unit 1)
@@ -4883,7 +5049,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 175.26 152.4 90)
 			(hide yes)
 			(show_name no)
@@ -4923,7 +5089,7 @@
 			(uuid "7ddc13f8-2279-484c-acbc-54de486908f7")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R8")
 					(unit 1)
@@ -4962,7 +5128,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 175.26 167.64 90)
 			(hide yes)
 			(show_name no)
@@ -5002,7 +5168,7 @@
 			(uuid "ac0cce37-3f1c-480f-a4d0-f997b7596a61")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R9")
 					(unit 1)
@@ -5041,7 +5207,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 175.26 182.88 90)
 			(hide yes)
 			(show_name no)
@@ -5081,7 +5247,7 @@
 			(uuid "79059b4e-240b-4827-b106-23c16d612fab")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R10")
 					(unit 1)
@@ -5120,7 +5286,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 175.26 137.16 90)
 			(hide yes)
 			(show_name no)
@@ -5160,98 +5326,9 @@
 			(uuid "378027e1-e815-4d4d-93db-791cf129e47c")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x05")
-		(at 144.78 160.02 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7e3e3c5f-ea56-43a8-87b6-8a2bee5427ba")
-		(property "Reference" "J3"
-			(at 143.51 151.892 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ESC_SIG"
-			(at 143.51 168.148 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
-			(at 144.78 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 144.78 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ba5df57f-aede-480d-9d2e-8f06064eeaa4")
-		)
-		(pin "2"
-			(uuid "fb06a725-bfc1-40b4-baba-ba22623bbc23")
-		)
-		(pin "3"
-			(uuid "0a224f1c-1b87-4e2c-ba2a-105c01acfefd")
-		)
-		(pin "4"
-			(uuid "9e13cad4-a7d3-45e9-a4f2-4902a69d6fa6")
-		)
-		(pin "5"
-			(uuid "acb74baf-e086-48c3-84a6-60121569843f")
-		)
-		(instances
-			(project "drone_v1"
-				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -5334,7 +5411,7 @@
 			(uuid "010be611-45dd-464d-a894-585416e0507d")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "J2")
 					(unit 1)
@@ -5354,7 +5431,7 @@
 		(dnp no)
 		(uuid "0d5c28f1-7c16-48e5-84ea-c6cc5f38bde3")
 		(property "Reference" "C5"
-			(at 334.01 158.75 0)
+			(at 334.01 158.115 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5365,7 +5442,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 334.01 160.02 0)
+			(at 334.01 160.655 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5375,7 +5452,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 331.165 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -5415,7 +5492,7 @@
 			(uuid "37631277-309f-456f-b48c-df663f239845")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "C5")
 					(unit 1)
@@ -5512,7 +5589,7 @@
 			(uuid "48705a47-f8ff-421e-b644-3b4dd1b807bf")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "J5")
 					(unit 1)
@@ -5532,7 +5609,7 @@
 		(dnp no)
 		(uuid "2f9563a4-23f7-4fb5-94f1-90af545ae1e6")
 		(property "Reference" "C6"
-			(at 346.71 158.75 0)
+			(at 346.71 158.115 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5543,7 +5620,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 346.71 160.02 0)
+			(at 346.71 160.655 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5553,7 +5630,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 343.865 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -5593,7 +5670,7 @@
 			(uuid "2f08faea-5cb5-4db0-bd8a-1e45ab565c25")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "C6")
 					(unit 1)
@@ -5679,7 +5756,7 @@
 			(uuid "e1eac266-69a7-4eba-a8ad-14b65f54c696")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "J4")
 					(unit 1)
@@ -5718,7 +5795,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 226.06 243.84 90)
 			(hide yes)
 			(show_name no)
@@ -5758,7 +5835,7 @@
 			(uuid "8dfbc038-60fa-4773-9645-27901770a3b9")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R12")
 					(unit 1)
@@ -5799,7 +5876,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 211.582 250.19 90)
 			(hide yes)
 			(show_name no)
@@ -5839,7 +5916,7 @@
 			(uuid "b3455875-1252-4082-90e2-c8f3ed67e6b4")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R13")
 					(unit 1)
@@ -5859,7 +5936,7 @@
 		(dnp no)
 		(uuid "1cfcd0f5-ded4-48cf-8de5-b6fb5b0ffdbf")
 		(property "Reference" "C7"
-			(at 359.41 158.75 0)
+			(at 359.41 158.115 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5870,7 +5947,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 359.41 160.02 0)
+			(at 359.41 160.655 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5880,7 +5957,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 356.565 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -5920,7 +5997,7 @@
 			(uuid "73ccf97a-5f2b-4fec-ae41-74dd2938413e")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "C7")
 					(unit 1)
@@ -5998,7 +6075,7 @@
 			(uuid "783002ba-09fd-47ca-8316-9056a563ae44")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#FLG01")
 					(unit 1)
@@ -6076,7 +6153,7 @@
 			(uuid "9cc24ef2-eddc-4b8f-9484-20fef2050bf5")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#FLG02")
 					(unit 1)
@@ -6154,7 +6231,7 @@
 			(uuid "f97edcb6-4607-48d2-8c31-6236491e9aae")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#FLG03")
 					(unit 1)
@@ -6232,7 +6309,7 @@
 			(uuid "c9dbf2a7-8a69-4220-a8e2-3463f5f0a436")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#FLG04")
 					(unit 1)
@@ -6310,7 +6387,7 @@
 			(uuid "3f80ecdc-ebf4-4a7a-8c0e-086c185aede6")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#FLG05")
 					(unit 1)
@@ -6351,7 +6428,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 336.042 107.95 90)
 			(hide yes)
 			(show_name no)
@@ -6391,7 +6468,7 @@
 			(uuid "a369252d-2f70-4a7a-b0eb-8661a42754ed")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "R14")
 					(unit 1)
@@ -6400,7 +6477,7 @@
 		)
 	)
 	(symbol
-		(lib_id "drone_v1:AT128A-70B")
+		(lib_id "drone_v4:AT128A-70B")
 		(at 276.86 149.86 0)
 		(unit 1)
 		(body_style 1)
@@ -6430,7 +6507,7 @@
 				)
 			)
 		)
-		(property "Footprint" "drone_v1:AT128A-70B_Socket"
+		(property "Footprint" "drone_v4:AT128A-70B_Socket"
 			(at 276.86 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -6638,7 +6715,7 @@
 			(uuid "0d3a56b8-1328-4336-ac25-e5f4f657f7b7")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "U2")
 					(unit 1)
@@ -6716,7 +6793,7 @@
 			(uuid "ceab0f16-eff9-4855-af70-fe0a4b3c6e85")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR01")
 					(unit 1)
@@ -6794,7 +6871,7 @@
 			(uuid "b99087ef-c374-4768-8b85-7974c3e5d763")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR02")
 					(unit 1)
@@ -6872,7 +6949,7 @@
 			(uuid "cc8b6def-a7dc-434d-9b3b-accb3de43ef5")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR03")
 					(unit 1)
@@ -6950,7 +7027,7 @@
 			(uuid "5d55fbdf-0baf-463b-9540-519dbee417f2")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR04")
 					(unit 1)
@@ -7028,7 +7105,7 @@
 			(uuid "218e180a-b7da-4ccf-9b1e-254265902a98")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR05")
 					(unit 1)
@@ -7105,7 +7182,7 @@
 			(uuid "b03cdb59-e714-448e-b466-5a6ea6fb7544")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR06")
 					(unit 1)
@@ -7183,7 +7260,7 @@
 			(uuid "f460e7ca-c9e5-4283-9232-f69802e2eead")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR07")
 					(unit 1)
@@ -7260,7 +7337,7 @@
 			(uuid "0c02464b-894c-48be-9c5e-63e1c7bc74c2")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR08")
 					(unit 1)
@@ -7338,7 +7415,7 @@
 			(uuid "65ab4cad-d11e-425b-9830-7e251c1abbf6")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR09")
 					(unit 1)
@@ -7416,7 +7493,7 @@
 			(uuid "c1284da0-22aa-4b75-81d8-854881ffa491")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR10")
 					(unit 1)
@@ -7494,7 +7571,7 @@
 			(uuid "25f23aec-101c-4665-abba-03e7d0043ae1")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR11")
 					(unit 1)
@@ -7572,7 +7649,7 @@
 			(uuid "e0b105df-db0f-4540-89d0-b5c70a4093c0")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR12")
 					(unit 1)
@@ -7649,7 +7726,7 @@
 			(uuid "c0984d2f-ffec-4a35-b294-edf9ae7dd85a")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR13")
 					(unit 1)
@@ -7727,7 +7804,7 @@
 			(uuid "725ea1f6-1a9b-4193-85f6-28f5b76591db")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR14")
 					(unit 1)
@@ -7804,7 +7881,7 @@
 			(uuid "d2f8383b-c627-4dec-b5b2-639e01930955")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR15")
 					(unit 1)
@@ -7882,7 +7959,7 @@
 			(uuid "14f4eeab-973a-42e0-b56c-ef5d832dd685")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR16")
 					(unit 1)
@@ -7959,7 +8036,7 @@
 			(uuid "0f7e747c-9721-493f-b87e-e9141a989955")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR17")
 					(unit 1)
@@ -8037,7 +8114,7 @@
 			(uuid "2cd1fd79-6314-47a5-ac82-1c441ca9f35d")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR18")
 					(unit 1)
@@ -8114,7 +8191,7 @@
 			(uuid "5d545e95-dcf7-4fb1-9155-eddc30181038")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR19")
 					(unit 1)
@@ -8192,7 +8269,7 @@
 			(uuid "198c4e56-d7b0-40e5-af17-bc7d3bc4ebeb")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR20")
 					(unit 1)
@@ -8270,7 +8347,7 @@
 			(uuid "8e774105-115f-48bd-a25b-0a177a8e12bc")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR21")
 					(unit 1)
@@ -8348,7 +8425,7 @@
 			(uuid "40a54711-18e5-4f58-8f74-82473e9643a1")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR22")
 					(unit 1)
@@ -8426,7 +8503,7 @@
 			(uuid "3e0ea923-a3a9-4b2f-905c-b43c0ff8cb4f")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR23")
 					(unit 1)
@@ -8504,7 +8581,7 @@
 			(uuid "4be55d7c-0607-4803-b4b2-3c5272d14603")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR24")
 					(unit 1)
@@ -8582,7 +8659,7 @@
 			(uuid "a47716ce-06ac-4d35-acac-b17c78a1b46d")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR25")
 					(unit 1)
@@ -8660,87 +8737,9 @@
 			(uuid "f00bbb02-ffe1-4b7c-ad9a-7c15d8a7e682")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 152.4 165.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5de73505-7c6a-41a6-a13c-9d5ca60593e1")
-		(property "Reference" "#PWR27"
-			(at 152.4 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 152.4 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 152.4 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0eedb4ff-c75a-4751-a751-61169a3d6a7f")
-		)
-		(instances
-			(project "drone_v1"
-				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
-					(reference "#PWR27")
 					(unit 1)
 				)
 			)
@@ -8816,7 +8815,7 @@
 			(uuid "df3b46d1-01ac-4cf2-8bac-68afe9d48a3c")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR28")
 					(unit 1)
@@ -8894,7 +8893,7 @@
 			(uuid "ca8e5ffb-b7a5-4404-b6c9-1c210e673ca3")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR29")
 					(unit 1)
@@ -8972,7 +8971,7 @@
 			(uuid "c8d01e1f-6854-4d2d-bf04-a53e13fcb8bd")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR30")
 					(unit 1)
@@ -9050,7 +9049,7 @@
 			(uuid "78f9503a-8be1-4e5e-8b63-1435a8680143")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR31")
 					(unit 1)
@@ -9128,7 +9127,7 @@
 			(uuid "01497646-c258-4d6b-b686-f19e4eed0897")
 		)
 		(instances
-			(project "drone_v1"
+			(project "drone_v4"
 				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
 					(reference "#PWR32")
 					(unit 1)
@@ -9589,39 +9588,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 137.16)
-			(xy 154.94 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "954623fa-44c3-468a-aaaa-31c8a74c3f33")
-	)
-	(wire
-		(pts
-			(xy 154.94 137.16)
-			(xy 154.94 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc52c063-e3bd-4756-b3aa-b1d0ae28fae1")
-	)
-	(wire
-		(pts
-			(xy 154.94 154.94)
-			(xy 149.86 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdd2c7c7-2267-4f43-a7fd-1aa579bf6e74")
-	)
-	(wire
-		(pts
 			(xy 190.5 152.4)
 			(xy 190.5 154.94)
 		)
@@ -9641,39 +9607,6 @@
 			(type default)
 		)
 		(uuid "a7560e04-b6e5-4d98-8d25-05efe8a11ec0")
-	)
-	(wire
-		(pts
-			(xy 171.45 152.4)
-			(xy 160.02 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "094c52ae-a0d5-49dd-b44b-db4a5d3cc8b6")
-	)
-	(wire
-		(pts
-			(xy 160.02 152.4)
-			(xy 160.02 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "856c5b2d-4705-4689-a41a-b17b30845101")
-	)
-	(wire
-		(pts
-			(xy 160.02 157.48)
-			(xy 149.86 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2a0ab80-1456-483c-994a-3c3c7ee7bc21")
 	)
 	(wire
 		(pts
@@ -9699,39 +9632,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 167.64)
-			(xy 162.56 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53e48810-9a3c-4c3e-85f2-b6186d081603")
-	)
-	(wire
-		(pts
-			(xy 162.56 167.64)
-			(xy 162.56 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e097d75-3cc0-4946-8815-2bb7062fb336")
-	)
-	(wire
-		(pts
-			(xy 162.56 160.02)
-			(xy 149.86 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2845c8c3-2319-4607-923d-7e2d2bfb6094")
-	)
-	(wire
-		(pts
 			(xy 190.5 182.88)
 			(xy 190.5 185.42)
 		)
@@ -9751,50 +9651,6 @@
 			(type default)
 		)
 		(uuid "f1952630-641e-4544-9ec1-aa405b87f810")
-	)
-	(wire
-		(pts
-			(xy 171.45 182.88)
-			(xy 157.48 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "282f5a80-31dd-497e-bdc4-bdd34f6a149d")
-	)
-	(wire
-		(pts
-			(xy 157.48 182.88)
-			(xy 157.48 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d2fb3a1-5cf2-4f89-bf77-747658541034")
-	)
-	(wire
-		(pts
-			(xy 157.48 162.56)
-			(xy 149.86 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "920fd2ad-f226-4b6b-a240-4491bd054313")
-	)
-	(wire
-		(pts
-			(xy 149.86 165.1)
-			(xy 152.4 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c92391a1-ce00-4865-8b5d-e0a704017373")
 	)
 	(wire
 		(pts
@@ -10726,7 +10582,7 @@
 		)
 		(uuid "48938c5a-f35d-4597-ab50-049ff1ec6c11")
 	)
-	(text "1k + BAT54 clamp + 100nF"
+	(text "1k + 1N4148 clamp + 100nF"
 		(exclude_from_sim no)
 		(at 347.98 107.95 0)
 		(effects
@@ -10821,6 +10677,709 @@
 			(justify left bottom)
 		)
 		(uuid "5652f99b-2f3f-4e40-afba-7edf1e66dee1")
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 154.94 154.94 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "94a664ef-779d-4a29-8946-c2ae041f5bba")
+		(property "Reference" "J3"
+			(at 145.5 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESC_M1"
+			(at 145.5 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 154.94 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 154.94 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1fd96a90-8751-45a4-8e0c-70fea91ae4d1")
+		)
+		(pin "2"
+			(uuid "32a474dd-c64c-4cef-8f64-5efc294dc46a")
+		)
+		(pin "3"
+			(uuid "d4b023e0-f2bb-49a9-b301-b41a2bccc1a6")
+		)
+		(instances
+			(project "drone_v4"
+				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2ccdd7fe-42c2-41fc-b339-4dc5ab79a5b6")
+		(property "Reference" "#PWR27"
+			(at 160.02 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "01d29544-7737-4f3d-9adf-7b419189dafb")
+		)
+		(instances
+			(project "drone_v4"
+				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
+					(reference "#PWR27")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 160.02 152.4)
+			(xy 171.45 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b032b47-ca30-4bc2-88a2-8896e72707c9")
+	)
+	(no_connect
+		(at 160.02 154.94)
+		(uuid "b14f9e00-9603-4199-bb38-34221b22f21c")
+	)
+
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 154.94 170.18 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2730c884-c0c5-4bbc-9ebe-63927ecbfc19")
+		(property "Reference" "J6"
+			(at 145.5 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESC_M2"
+			(at 145.5 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 154.94 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 154.94 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "da63f3a5-7cbd-489c-b469-541e5bfb33e1")
+		)
+		(pin "2"
+			(uuid "76176340-fdb1-4584-a8e7-dea0db763e7e")
+		)
+		(pin "3"
+			(uuid "53ad60f0-ecaa-4f72-a4cf-e5b4c2d4a338")
+		)
+		(instances
+			(project "drone_v4"
+				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78666d67-505f-40bd-9e6f-367b29e53381")
+		(property "Reference" "#PWR33"
+			(at 160.02 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9192929a-7870-4c23-9acc-516e5501250b")
+		)
+		(instances
+			(project "drone_v4"
+				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
+					(reference "#PWR33")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 160.02 167.64)
+			(xy 171.45 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c7218d4-1d73-45bc-9afe-900ecad02dc9")
+	)
+	(no_connect
+		(at 160.02 170.18)
+		(uuid "4bb2360e-bf3a-4f4c-9897-1a1c31223c8c")
+	)
+
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 154.94 185.42 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f18188d3-274c-421f-906c-f2f8d8c60949")
+		(property "Reference" "J7"
+			(at 145.5 184.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESC_M3"
+			(at 145.5 186.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 154.94 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 154.94 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "392694a3-5b46-459f-a013-fb86005bef30")
+		)
+		(pin "2"
+			(uuid "b1e65488-04f0-484d-872a-cd018ecc1f72")
+		)
+		(pin "3"
+			(uuid "130edab4-e3f2-49a6-8a89-b920ae04c7de")
+		)
+		(instances
+			(project "drone_v4"
+				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 187.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0ea354d4-0841-441b-9275-b2a9820fe7ff")
+		(property "Reference" "#PWR34"
+			(at 160.02 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7db5d9ea-3726-435b-8bce-4dfa4a6a7e7f")
+		)
+		(instances
+			(project "drone_v4"
+				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
+					(reference "#PWR34")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 160.02 182.88)
+			(xy 171.45 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95e43581-0843-4c8d-9fa5-7a0b5abe12a2")
+	)
+	(no_connect
+		(at 160.02 185.42)
+		(uuid "78ec1c48-34c9-49de-976c-79ae8227381a")
+	)
+
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 154.94 139.7 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d2bd6b3-a8de-4446-91f0-dba1c66a1bec")
+		(property "Reference" "J8"
+			(at 145.5 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESC_M4"
+			(at 145.5 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 154.94 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 154.94 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "722c70a3-cb23-4034-bf25-8db813caaa10")
+		)
+		(pin "2"
+			(uuid "c1a690f3-9b2d-4fec-9cfc-4758733194a9")
+		)
+		(pin "3"
+			(uuid "f3e07a3d-596a-44bd-9b76-1ed002dcb2b7")
+		)
+		(instances
+			(project "drone_v4"
+				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 142.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d98b46d2-9e7f-4202-888a-48ec44f7cb5b")
+		(property "Reference" "#PWR35"
+			(at 160.02 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f47eaca7-f510-44d3-9b96-f81c4d657379")
+		)
+		(instances
+			(project "drone_v4"
+				(path "/6256a130-b6ed-436b-88ed-f43a1c28b28a"
+					(reference "#PWR35")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 160.02 137.16)
+			(xy 171.45 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2756d349-9e23-427d-89ac-07a1e223aae1")
+	)
+	(no_connect
+		(at 160.02 139.7)
+		(uuid "4da4ba51-d5c0-4c17-8c86-4f9398f6f68a")
 	)
 	(sheet_instances
 		(path "/"

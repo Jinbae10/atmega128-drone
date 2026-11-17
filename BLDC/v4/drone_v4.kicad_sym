@@ -1,4 +1,4 @@
-(kicad_symbol_lib (version 20241209) (generator "drone_v2_gen") (generator_version "10.0")
+(kicad_symbol_lib (version 20241209) (generator "drone_v1_gen") (generator_version "10.0")
   
   
   
@@ -19,25 +19,24 @@
       (pin passive line (at 10.16 -2.54 180) (length 2.54) (name "OUT-" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
     )
   )
-  (symbol "BAT54_SOT23" (pin_names (offset 0.5)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+  (symbol "D_THT" (pin_names (offset 0.5)) (exclude_from_sim no) (in_bom yes) (on_board yes)
     (property "Reference" "D" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
-    (property "Value" "BAT54" (at 0 6.35 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Value" "1N4148" (at 0 6.35 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
     (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-    (property "Description" "BAT54 single Schottky SOT-23: 1=A 2=NC 3=K" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-    (symbol "BAT54_SOT23_0_1"
+    (property "Description" "Small-signal diode DO-35 THT: 1=K 2=A" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "D_THT_0_1"
       (rectangle (start -5.08 2.54) (end 5.08 -2.54) (stroke (width 0.254) (type default)) (fill (type background)))
     )
-    (symbol "BAT54_SOT23_1_1"
-      (pin passive line (at -7.62 0 0) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
-      (pin passive line (at 7.62 0 180) (length 2.54) (name "K" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
-      (pin no_connect line (at 0 -5.08 90) (length 2.54) (name "NC" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+    (symbol "D_THT_1_1"
+      (pin passive line (at -7.62 0 0) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 7.62 0 180) (length 2.54) (name "K" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
     )
   )
   (symbol "AT128A-70B" (pin_names (offset 0.5)) (exclude_from_sim no) (in_bom yes) (on_board yes)
     (property "Reference" "U" (at 0 39.37 0) (effects (font (size 1.27 1.27))))
     (property "Value" "AT128A-70B" (at 0 -39.37 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "drone_v2:AT128A-70B_Socket" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Footprint" "drone_v4:AT128A-70B_Socket" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
     (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
     (property "Description" "AT128A-70B V2.0 MCU module socket, 29 pin x 2" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
     (symbol "AT128A-70B_0_1"
