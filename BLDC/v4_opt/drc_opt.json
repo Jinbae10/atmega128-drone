@@ -1,0 +1,923 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-18T05:38:49",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Polarized capacitor')",
+            "items": [
+                {
+                    "description": "풋프린트 C1",
+                    "pos": {
+                        "x": 176.5,
+                        "y": 114.0
+                    },
+                    "uuid": "0e3f3acf-0b95-4fa9-93ba-c266d8790b7a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Polarized capacitor')",
+            "items": [
+                {
+                    "description": "풋프린트 C2",
+                    "pos": {
+                        "x": 176.5,
+                        "y": 81.5
+                    },
+                    "uuid": "912d05ac-0b46-43fd-a7a4-e163b1f123f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "풋프린트 C3",
+                    "pos": {
+                        "x": 150.5,
+                        "y": 78.3
+                    },
+                    "uuid": "a292f457-5605-45e2-ae27-c93be488c2a8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "풋프린트 C4",
+                    "pos": {
+                        "x": 163.2,
+                        "y": 55.44
+                    },
+                    "uuid": "9705070f-292d-4911-b675-3ff461a50c29"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "풋프린트 C5",
+                    "pos": {
+                        "x": 135.0,
+                        "y": 78.3
+                    },
+                    "uuid": "262390ec-65a3-492f-a3a5-6828ccca102d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "풋프린트 C6",
+                    "pos": {
+                        "x": 135.0,
+                        "y": 103.7
+                    },
+                    "uuid": "4a370c1a-3341-4620-b79c-62aa1372d62d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "풋프린트 C7",
+                    "pos": {
+                        "x": 134.8,
+                        "y": 120.5
+                    },
+                    "uuid": "b983778e-7f32-4109-8a2a-f022c7fe9ab0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Small-signal diode DO-35 THT: 1=K 2=A')",
+            "items": [
+                {
+                    "description": "풋프린트 D1",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 55.44
+                    },
+                    "uuid": "c7c69c0e-f0c8-473f-8458-d0c4abfe9fe7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "풋프린트에 심볼 필드 'MPN'이(가) 없습니다",
+            "items": [
+                {
+                    "description": "풋프린트 F1",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 121.0
+                    },
+                    "uuid": "6463101d-fcac-498b-815c-45fd603c1510"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)')",
+            "items": [
+                {
+                    "description": "풋프린트 J1",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 127.0
+                    },
+                    "uuid": "1494ca23-078f-42d5-b924-e29b404c772e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)')",
+            "items": [
+                {
+                    "description": "풋프린트 J2",
+                    "pos": {
+                        "x": 139.0,
+                        "y": 78.3
+                    },
+                    "uuid": "73b8e8a5-8272-460b-ada1-4a39aadfef75"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)')",
+            "items": [
+                {
+                    "description": "풋프린트 J3",
+                    "pos": {
+                        "x": 139.0,
+                        "y": 88.46
+                    },
+                    "uuid": "31b3f14f-69a6-4a30-8025-c55c7d5a6d05"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)')",
+            "items": [
+                {
+                    "description": "풋프린트 J4",
+                    "pos": {
+                        "x": 134.8,
+                        "y": 127.5
+                    },
+                    "uuid": "78e45427-3dfa-4ed4-aaad-770f882a4713"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)')",
+            "items": [
+                {
+                    "description": "풋프린트 J5",
+                    "pos": {
+                        "x": 139.0,
+                        "y": 103.7
+                    },
+                    "uuid": "8f6af31b-f6fd-4cbd-921c-a996688048e6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R1",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 70.5
+                    },
+                    "uuid": "e0d98035-de63-4f0d-bdb1-4a1263778d28"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R2",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 63.5
+                    },
+                    "uuid": "fb608bb8-72eb-40c5-9731-5df6f2b5d3eb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R3",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 60.0
+                    },
+                    "uuid": "6a3223d2-026e-4704-be9b-36deccd9ed84"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R4",
+                    "pos": {
+                        "x": 163.5,
+                        "y": 91.5
+                    },
+                    "uuid": "fda49d65-c3bc-420c-af9c-191c76d21835"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R5",
+                    "pos": {
+                        "x": 160.8,
+                        "y": 95.5
+                    },
+                    "uuid": "1df2dbf6-0599-4332-a422-0adf6e73cd56"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R6",
+                    "pos": {
+                        "x": 163.5,
+                        "y": 99.5
+                    },
+                    "uuid": "78be734d-771f-4c16-97b6-d0d89723c0f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R7",
+                    "pos": {
+                        "x": 160.8,
+                        "y": 87.5
+                    },
+                    "uuid": "30359ccb-f319-4abb-9017-2393473c6f5c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R8",
+                    "pos": {
+                        "x": 158.0,
+                        "y": 91.5
+                    },
+                    "uuid": "90c9f39a-7474-4016-a34c-ce3e9606b394"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R9",
+                    "pos": {
+                        "x": 158.0,
+                        "y": 95.5
+                    },
+                    "uuid": "b1777387-ccc1-42b6-8528-ada0113830a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R10",
+                    "pos": {
+                        "x": 158.0,
+                        "y": 99.5
+                    },
+                    "uuid": "03b67258-4dd4-4d20-8b76-703760ce5e62"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R11",
+                    "pos": {
+                        "x": 158.0,
+                        "y": 87.5
+                    },
+                    "uuid": "35887a11-2447-4c28-984e-0cae61102e01"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R12",
+                    "pos": {
+                        "x": 151.0,
+                        "y": 116.4
+                    },
+                    "uuid": "d0ac5894-51cc-47e0-afdd-73048342a016"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R13",
+                    "pos": {
+                        "x": 158.62,
+                        "y": 120.5
+                    },
+                    "uuid": "a29fc568-b3a7-4270-8879-5a7049955355"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Resistor')",
+            "items": [
+                {
+                    "description": "풋프린트 R14",
+                    "pos": {
+                        "x": 160.12,
+                        "y": 67.0
+                    },
+                    "uuid": "b943987f-b1c2-4027-9fef-0a17292d160e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Switch, single pole double throw')",
+            "items": [
+                {
+                    "description": "풋프린트 SW1",
+                    "pos": {
+                        "x": 178.0,
+                        "y": 72.5
+                    },
+                    "uuid": "f9a0eacc-7c0f-4de8-b559-d501f85fa490"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'MP1584 buck module, adjust to 5.0V before connecting')",
+            "items": [
+                {
+                    "description": "풋프린트 U1",
+                    "pos": {
+                        "x": 179.8,
+                        "y": 97.5
+                    },
+                    "uuid": "b8e8d1d6-b547-45f0-b938-de194cf9658f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'AT128A-70B V2.0 MCU module socket, 29 pin x 2')",
+            "items": [
+                {
+                    "description": "풋프린트 U2",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 55.44
+                    },
+                    "uuid": "fe20e01f-b77a-45e1-9064-69c5d5d9c79e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "풋프린트 MH1",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 54.5
+                    },
+                    "uuid": "0abd1bfa-965f-482d-a096-e51464d3b1a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "풋프린트 MH4",
+                    "pos": {
+                        "x": 186.5,
+                        "y": 127.5
+                    },
+                    "uuid": "66785058-f51e-4e6e-98fa-c8a85c1028a8"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "풋프린트 MH3",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 127.5
+                    },
+                    "uuid": "9c340439-4c92-4961-994e-7d9ec32596d2"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "풋프린트 MH2",
+                    "pos": {
+                        "x": 186.5,
+                        "y": 54.5
+                    },
+                    "uuid": "ab9d8635-8974-4b7f-9900-bfdf22474a13"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        }
+    ],
+    "source": "drone_v4_opt.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R10",
+                    "pos": {
+                        "x": 158.0,
+                        "y": 99.5
+                    },
+                    "uuid": "03b67258-4dd4-4d20-8b76-703760ce5e62"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'MountingHole_2.2mm'을(를) 라이브러리 'MountingHole'에서 찾을 수 없습니다",
+            "items": [
+                {
+                    "description": "풋프린트 MH1",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 54.5
+                    },
+                    "uuid": "0abd1bfa-965f-482d-a096-e51464d3b1a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "풋프린트 'CP_Radial_D6.3mm_P2.50mm'이(가) 라이브러리 'Capacitor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 C1",
+                    "pos": {
+                        "x": 176.5,
+                        "y": 114.0
+                    },
+                    "uuid": "0e3f3acf-0b95-4fa9-93ba-c266d8790b7a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R5",
+                    "pos": {
+                        "x": 160.8,
+                        "y": 95.5
+                    },
+                    "uuid": "1df2dbf6-0599-4332-a422-0adf6e73cd56"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R7",
+                    "pos": {
+                        "x": 160.8,
+                        "y": 87.5
+                    },
+                    "uuid": "30359ccb-f319-4abb-9017-2393473c6f5c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R11",
+                    "pos": {
+                        "x": 158.0,
+                        "y": 87.5
+                    },
+                    "uuid": "35887a11-2447-4c28-984e-0cae61102e01"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'Fuse_FRT050-33F_P5.10'이(가) 라이브러리 'drone_v4'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 F1",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 121.0
+                    },
+                    "uuid": "6463101d-fcac-498b-815c-45fd603c1510"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'MountingHole_2.2mm'을(를) 라이브러리 'MountingHole'에서 찾을 수 없습니다",
+            "items": [
+                {
+                    "description": "풋프린트 MH4",
+                    "pos": {
+                        "x": 186.5,
+                        "y": 127.5
+                    },
+                    "uuid": "66785058-f51e-4e6e-98fa-c8a85c1028a8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R3",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 60.0
+                    },
+                    "uuid": "6a3223d2-026e-4704-be9b-36deccd9ed84"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R6",
+                    "pos": {
+                        "x": 163.5,
+                        "y": 99.5
+                    },
+                    "uuid": "78be734d-771f-4c16-97b6-d0d89723c0f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R8",
+                    "pos": {
+                        "x": 158.0,
+                        "y": 91.5
+                    },
+                    "uuid": "90c9f39a-7474-4016-a34c-ce3e9606b394"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'C_Disc_D4.3mm_W1.9mm_P5.00mm'이(가) 라이브러리 'Capacitor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 C4",
+                    "pos": {
+                        "x": 163.2,
+                        "y": 55.44
+                    },
+                    "uuid": "9705070f-292d-4911-b675-3ff461a50c29"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'MountingHole_2.2mm'을(를) 라이브러리 'MountingHole'에서 찾을 수 없습니다",
+            "items": [
+                {
+                    "description": "풋프린트 MH3",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 127.5
+                    },
+                    "uuid": "9c340439-4c92-4961-994e-7d9ec32596d2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "풋프린트 'C_Disc_D4.3mm_W1.9mm_P5.00mm'이(가) 라이브러리 'Capacitor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 C3",
+                    "pos": {
+                        "x": 150.5,
+                        "y": 78.3
+                    },
+                    "uuid": "a292f457-5605-45e2-ae27-c93be488c2a8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R13",
+                    "pos": {
+                        "x": 158.62,
+                        "y": 120.5
+                    },
+                    "uuid": "a29fc568-b3a7-4270-8879-5a7049955355"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'MountingHole_2.2mm'을(를) 라이브러리 'MountingHole'에서 찾을 수 없습니다",
+            "items": [
+                {
+                    "description": "풋프린트 MH2",
+                    "pos": {
+                        "x": 186.5,
+                        "y": 54.5
+                    },
+                    "uuid": "ab9d8635-8974-4b7f-9900-bfdf22474a13"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R9",
+                    "pos": {
+                        "x": 158.0,
+                        "y": 95.5
+                    },
+                    "uuid": "b1777387-ccc1-42b6-8528-ada0113830a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R14",
+                    "pos": {
+                        "x": 160.12,
+                        "y": 67.0
+                    },
+                    "uuid": "b943987f-b1c2-4027-9fef-0a17292d160e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'D_DO-35_SOD27_P7.62mm_Horizontal'이(가) 라이브러리 'Diode_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 D1",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 55.44
+                    },
+                    "uuid": "c7c69c0e-f0c8-473f-8458-d0c4abfe9fe7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R12",
+                    "pos": {
+                        "x": 151.0,
+                        "y": 116.4
+                    },
+                    "uuid": "d0ac5894-51cc-47e0-afdd-73048342a016"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R1",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 70.5
+                    },
+                    "uuid": "e0d98035-de63-4f0d-bdb1-4a1263778d28"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'SW_SS-12D02_P2.00'이(가) 라이브러리 'drone_v4'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 SW1",
+                    "pos": {
+                        "x": 178.0,
+                        "y": 72.5
+                    },
+                    "uuid": "f9a0eacc-7c0f-4de8-b559-d501f85fa490"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R2",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 63.5
+                    },
+                    "uuid": "fb608bb8-72eb-40c5-9731-5df6f2b5d3eb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal'이(가) 라이브러리 'Resistor_THT'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 R4",
+                    "pos": {
+                        "x": 163.5,
+                        "y": 91.5
+                    },
+                    "uuid": "fda49d65-c3bc-420c-af9c-191c76d21835"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}
