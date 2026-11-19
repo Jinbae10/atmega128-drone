@@ -38,14 +38,7 @@
 | 열수축 튜브 5파이 1m | [no=1065347](https://www.devicemart.co.kr/goods/view?no=1065347) | 1 | 253원 |
 | 프로펠러 SMG 5030 2엽 CW/CCW | [no=1342513](https://www.devicemart.co.kr/goods/view?no=1342513) | 3쌍 | 8,580원 |
 
-## 4. 디바이스마트 밖
-
-| 부품 | 구입처 | 가격 |
-|---|---|---|
-| 3S LiPo 1300mAh 90C XT60 | [알리익스프레스](https://ko.aliexpress.com/item/4000244479545.html) | 19,750원 |
-| 밸런스 충전기 Imax B3 Pro (EU plug) | [알리익스프레스](https://ko.aliexpress.com/item/1005007620618797.html) | 약 6,270원~ |
-
-## 5. 합계 (VAT 포함)
+## 4. 합계 (VAT 포함)
 
 | 구분 | 금액 |
 |---|---|
@@ -56,13 +49,12 @@
 | PCB 제작 (사용자 확인 가격, 64×80mm 조건 미확인) | 19,000원 |
 | 배송비 | 2,700원 |
 | **디바이스마트 총액** | **약 52,313원** |
-| 알리 (배터리 + 충전기) | 약 26,020원 |
 
 - 2026-11-18 장바구니(PCB 제외): 33,313원(배송 포함).
 - `parts_v4.md` 합계(29,293원)에는 암헤더 1,320원이 빠져 있어 여기서는 포함했습니다.
-- 이미 구매: 모터 MT2204 2300KV ×4, ESC LittleBee-Spring 20A ×4. 보유·대여: HC-SR04, ATmega128A 모듈, JTAG ICE, AR-UART2USB.
+- 이미 구매: 모터 MT2204 2300KV ×4, ESC LittleBee-Spring 20A ×4, 3S LiPo 1300mAh 90C XT60, 충전기 Imax B3 Pro. 보유·대여: HC-SR04, ATmega128A 모듈, JTAG ICE, AR-UART2USB.
 
-## 6. 주문 전 확인
+## 5. 주문 전 확인
 
 1. 100nF 리드 간격, SS-12D02 고정 탭, MP1584 모듈 패드 위치 (실측)
 2. SW1 ON 방향(실크 ON/OFF는 추정) — 멀티미터 확인
