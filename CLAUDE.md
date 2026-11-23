@@ -26,7 +26,7 @@
 - 주문 내역에서 모터·ESC 구매 옵션(프롭 포함 여부) 확인, ESC 신호 케이블 길이 실측 후 하우징 교체 여부 결정
 - **J1 역접속 방지 결정**(극성 고정 커넥터 또는 보호 회로). 인라인 1A 퓨즈·하네스 재료(14AWG, 수축 튜브, 저ESR 35V 470~1000µF) 구매, 첫 전원은 스모크 스토퍼로
 - PCB 주문 전 실측: MP1584(SZH-PWSD-002) 패드 간격(18.542×13.208mm 8구멍으로 수정 완료, 캘리퍼 확인)·받은 모듈 실크 방향, SS-12D02 고정 탭 위치·크기(사진상 8.0~8.6mm, 현재 8.2), 100nF 리드 간격(전해는 2.5mm), GY-521 헤더 위치, HC-06 핀 순서(사진상 VCC·GND·TXD·RXD로 J4와 일치, 받은 모듈 실크 확인), J1 커넥터·극성, 보드 무게. 모듈 좌우 핀 줄 간격 22.86mm는 브레드보드 표준으로 확인
-- PCB v4 실측 반영(`BLDC/v4/MD/review_grok_agy.md`) 후 거버 출력·PCB 주문, `BLDC/v4/MD/parts_v4.md` 기준 소자·모듈 구매
+- PCB `v4_opt` 실측 반영(`BLDC/v4_opt/MD/status_v4_opt.md`, `review_grok_agy.md`) 후 거버 출력·PCB 주문, `BLDC/v4_opt/MD/parts_v4_opt.md` 기준 소자·모듈 구매
 - 와트미터로 모터 1개 풀스로틀 전류 측정(16A 이하 확인)
 - 프레임 STL 선정(MakerWorld Aero Mobius는 탈락, 상판에 모듈+PCB+배터리가 들어가는 더 큰 프레임 필요) 및 출력, 무게·추력 확인
 - 명령 프로토콜(키 배정·텔레메트리), 제어 구조(PID·고도 루프 주기), 페일세이프 세부 결정
@@ -142,7 +142,7 @@
 | `datasheet/MCU_AT128A-70B_V2.0.md/.pdf` | 대여 MCU 모듈(AT128A-70B V2.0) 매뉴얼 — 핀맵, 회로도 요약 |
 | `datasheet/USB-UART_AR-UART2USB.md/.pdf` | USB-UART 변환 모듈(CP2102) 매뉴얼 — 유선 백업 통신 |
 | `datasheet/IMU_MPU-6050_RegisterMap.md/.pdf` | MPU-6050(GY-521) 레지스터 맵 — 드론용 레지스터·초기화 순서. 보드 회로·전기 특성은 미포함 |
-| `BLDC/v4_opt/` | **최종 PCB**(64×80mm) KiCad 프로젝트 `drone_v4_opt.*`, 회로도 PDF, `images/`(회로도·PCB 2D 앞/뒤·3D), `MD/design_v4_opt.md`(재배치·핀 변경·검증), `MD/parts_v4_opt.md`(부품·가격), `MD/wiring_power_v4_opt.md`(외부 배선·전원 분배·퓨즈 검토, 남은 문제) |
+| `BLDC/v4_opt/` | **최종 PCB**(64×80mm) KiCad 프로젝트 `drone_v4_opt.*`, 회로도 PDF, `images/`(회로도·PCB 2D 앞/뒤·3D), `MD/design_v4_opt.md`(재배치·핀 변경·검증), `MD/parts_v4_opt.md`(부품·가격), `MD/wiring_power_v4_opt.md`(외부 배선·전원 분배·퓨즈 검토, 남은 문제), `MD/status_v4_opt.md`(주문 전 현황·체크리스트), `MD/review_grok_agy.md`(Grok·agy 1·2차 검토) |
 | `BLDC/v4/` | 이전 스루홀판(ESC 1×5 헤더, v3 소자 크기) KiCad 프로젝트 `drone_v4.*`(회로도·심볼·풋프린트), 회로도 PDF, 소자 데이터시트 `datasheet/`(1N4148, FRT050-33F, 1/4W 저항, BAT43), 문서 `MD/`(`schematic_v4.md` 회로도 설명·넷 연결표(AI·발표용), `parts_v4.md`, `motor_esc_propeller.md`, `schematic_review.md`, `review_grok_agy.md`). PCB `drone_v4.kicad_pcb`는 회로도 변경 반영 완료(DRC 오류 0) |
 
 ## 결정 기록

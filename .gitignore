@@ -2,6 +2,7 @@
 .history/
 .mcp-backups/
 *-backups/
+**/analysis/
 *.bak
 *.kicad_prl
 fp-info-cache
