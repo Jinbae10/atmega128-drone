@@ -142,8 +142,7 @@
 | `datasheet/MCU_AT128A-70B_V2.0.md/.pdf` | 대여 MCU 모듈(AT128A-70B V2.0) 매뉴얼 — 핀맵, 회로도 요약 |
 | `datasheet/USB-UART_AR-UART2USB.md/.pdf` | USB-UART 변환 모듈(CP2102) 매뉴얼 — 유선 백업 통신 |
 | `datasheet/IMU_MPU-6050_RegisterMap.md/.pdf` | MPU-6050(GY-521) 레지스터 맵 — 드론용 레지스터·초기화 순서. 보드 회로·전기 특성은 미포함 |
-| `BLDC/v4_opt/` | **최종 PCB**(64×80mm) KiCad 프로젝트 `drone_v4_opt.*`, 회로도 PDF, `images/`(회로도·PCB 2D 앞/뒤·3D), `MD/design_v4_opt.md`(재배치·핀 변경·검증), `MD/parts_v4_opt.md`(부품·가격), `MD/wiring_power_v4_opt.md`(외부 배선·전원 분배·퓨즈 검토, 남은 문제), `MD/status_v4_opt.md`(주문 전 현황·체크리스트), `MD/review_grok_agy.md`(Grok·agy 1·2차 검토) |
-| `BLDC/v4/` | 이전 스루홀판(ESC 1×5 헤더, v3 소자 크기) KiCad 프로젝트 `drone_v4.*`(회로도·심볼·풋프린트), 회로도 PDF, 소자 데이터시트 `datasheet/`(1N4148, FRT050-33F, 1/4W 저항, BAT43), 문서 `MD/`(`schematic_v4.md` 회로도 설명·넷 연결표(AI·발표용), `parts_v4.md`, `motor_esc_propeller.md`, `schematic_review.md`, `review_grok_agy.md`). PCB `drone_v4.kicad_pcb`는 회로도 변경 반영 완료(DRC 오류 0) |
+| `BLDC/v4_opt/` | **최종 PCB**(64×80mm) KiCad 프로젝트 `drone_v4_opt.*`, 회로도 PDF, `gerber/`, `images/`(회로도·PCB 2D 앞/뒤·3D), `MD/design_v4_opt.md`(재배치·핀 변경·검증), `MD/parts_v4_opt.md`(부품·가격), `MD/wiring_power_v4_opt.md`(외부 배선·전원 분배·퓨즈 검토, 남은 문제), `MD/status_v4_opt.md`(주문 전 현황·체크리스트), `MD/review_grok_agy.md`(Grok·agy 1·2차 검토) |
 
 ## 결정 기록
 | 항목 | 결정 | 날짜·상태 |
