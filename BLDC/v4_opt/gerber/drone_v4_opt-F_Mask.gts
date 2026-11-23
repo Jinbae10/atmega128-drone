@@ -1,12 +1,12 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,10.0.7*%
-%TF.CreationDate,2026-11-23T10:38:44+09:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,10.0.6*%
+%TF.CreationDate,2026-11-23T16:12:06+09:00*%
 %TF.ProjectId,drone_v4_opt,64726f6e-655f-4763-945f-6f70742e6b69,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Top*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 10.0.7) date 2026-11-23 10:38:44*
+G04 Created by KiCad (PCBNEW 10.0.6) date 2026-11-23 16:12:06*
 %MOMM*%
 %LPD*%
 G01*
@@ -277,7 +277,6 @@ X168860000Y-65600000D03*
 X168860000Y-68140000D03*
 X168860000Y-70680000D03*
 X168860000Y-73220000D03*
-X168860000Y-75760000D03*
 X168860000Y-78300000D03*
 X168860000Y-80840000D03*
 X168860000Y-83380000D03*

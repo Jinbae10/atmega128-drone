@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/drc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-11-18T05:55:16",
+    "date": "2026-11-23T16:12:05",
     "ignored_checks": [
         {
             "description": "Footprint has no courtyard defined",
@@ -26,9 +26,10 @@
     ],
     "included_severities": [
         "error",
-        "warning"
+        "warning",
+        "exclusion"
     ],
-    "kicad_version": "10.0.7",
+    "kicad_version": "10.0.6",
     "schematic_parity": [
         {
             "description": "필드 'Description'이(가) 다릅니다 (PCB: '', 회로도: 'Polarized capacitor')",
@@ -111,8 +112,8 @@
                 {
                     "description": "풋프린트 C6",
                     "pos": {
-                        "x": 135.0,
-                        "y": 103.7
+                        "x": 134.8,
+                        "y": 120.5
                     },
                     "uuid": "4a370c1a-3341-4620-b79c-62aa1372d62d"
                 }
@@ -126,8 +127,8 @@
                 {
                     "description": "풋프린트 C7",
                     "pos": {
-                        "x": 134.8,
-                        "y": 120.5
+                        "x": 130.0,
+                        "y": 122.7
                     },
                     "uuid": "b983778e-7f32-4109-8a2a-f022c7fe9ab0"
                 }
@@ -232,7 +233,7 @@
                     "description": "풋프린트 J5",
                     "pos": {
                         "x": 139.0,
-                        "y": 103.7
+                        "y": 121.48
                     },
                     "uuid": "8f6af31b-f6fd-4cbd-921c-a996688048e6"
                 }
@@ -494,6 +495,21 @@
             ],
             "severity": "warning",
             "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "회로도의 핀 38에 해당하는 패드를 찾을 수 없습니다",
+            "items": [
+                {
+                    "description": "풋프린트 U2",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 55.44
+                    },
+                    "uuid": "fe20e01f-b77a-45e1-9064-69c5d5d9c79e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
         },
         {
             "description": "Extra footprint",
@@ -914,6 +930,21 @@
                         "y": 91.5
                     },
                     "uuid": "fda49d65-c3bc-420c-af9c-191c76d21835"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "풋프린트 'AT128A-70B_Socket'이(가) 라이브러리 'drone_v4'의 사본과 일치하지 않습니다",
+            "items": [
+                {
+                    "description": "풋프린트 U2",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 55.44
+                    },
+                    "uuid": "fe20e01f-b77a-45e1-9064-69c5d5d9c79e"
                 }
             ],
             "severity": "warning",
