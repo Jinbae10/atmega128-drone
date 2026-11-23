@@ -79,6 +79,6 @@
 
 ## 3. 생성된 파일 목록 (`BLDC/v4_opt/`)
 - 프로젝트/회로도/PCB: `drone_v4_opt.kicad_pro`, `drone_v4_opt.kicad_sch`, `drone_v4_opt.kicad_pcb` (양면 GND 존 채움 반영 완료)
-- 이미지 (`images/`): 회로도 `schematic.png`, PCB 2D `pcb_top_2d.png`/`pcb_bottom_2d.png`, 3D `3d_top.png`/`3d_bottom.png`/`3d_iso.png` (2026-11-18 핀 이름 실크 반영). 회로도 PDF `drone_v4_opt_schematic.pdf`
+- 이미지 (`images/`): 회로도 `schematic.png`, PCB 2D `pcb_top_2d.png`/`pcb_bottom_2d.png`, 3D `3d_top.png`/`3d_bottom.png`/`3d_iso.png` (2026-11-23 J5 회전·U1 패드 수정 반영 재출력, kicad-cli). 루트 미리보기 `drone_v4_opt_preview.svg`(F/B.Cu·F.Silk·Edge)·`drone_v4_opt_silk.svg`·`drone_v4_opt_top/bottom/3d_*.png`도 같은 날 재출력. 3D 모델 중 GY-521·MP1584 wrl은 실물과 방향·크기가 달라 3D 그림은 참고용. 회로도 PDF `drone_v4_opt_schematic.pdf`
 - 부품·가격: `MD/parts_v4_opt.md`
 - DRC 리포트: `drc_opt_final.json`
