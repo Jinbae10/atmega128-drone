@@ -3,8 +3,8 @@
   (generator "kicad-mcp")
   (generator_version "9.0")
   (layer "F.Cu")
-  (descr "MP1584 buck module, UNVERIFIED pad layout (22x17 generic). Measure real VLT-VC042 before fabrication.")
-  (tags "MP1584 buck module measure-before-fab")
+  (descr "MP1584 mini buck module (SZH-PWSD-002 / D-SUN 22.1x16.8). 8 holes: IN-OUT 18.542, outer 13.208, pair pitch 2.54 (components101 drawing). Verify with caliper.")
+  (tags "MP1584 buck module")
 
   (property "Reference" "REF**" (at 0 -2 0)
     (layer "F.SilkS")
@@ -49,36 +49,68 @@
     (uuid "5b0db4a9-a5aa-49ee-91c3-567d5c4ecaf4")
   )
 
-  (pad "1" thru_hole oval
-    (at 7 9.8)
-    (size 2 2.6)
-    (drill 1)
-    (layers "*.Cu" "*.Mask")
-    (uuid "0675c01f-cfa7-4f25-85c3-ba4ea56f9a61")
+  (pad "1" thru_hole rect
+  	(at 6.604 9.271)
+  	(size 1.7 1.7)
+  	(drill 1)
+  	(layers "*.Cu" "*.Mask")
+  	(uuid "e0a8792c-4687-4533-a64e-0124cb34598f")
   )
 
-  (pad "2" thru_hole oval
-    (at -7 9.8)
-    (size 2 2.6)
-    (drill 1)
-    (layers "*.Cu" "*.Mask")
-    (uuid "a182fa00-9db9-42de-b2e6-2ab9d956d9d3")
+  (pad "1" thru_hole rect
+  	(at 4.064 9.271)
+  	(size 1.7 1.7)
+  	(drill 1)
+  	(layers "*.Cu" "*.Mask")
+  	(uuid "5d8a1bc5-5f2d-4d72-8e0b-9b178361028d")
   )
 
-  (pad "3" thru_hole oval
-    (at 7 -9.8)
-    (size 2 2.6)
-    (drill 1)
-    (layers "*.Cu" "*.Mask")
-    (uuid "4c1dad3b-4ba4-447d-8b1c-d0c4e0a077a5")
+  (pad "2" thru_hole circle
+  	(at -6.604 9.271)
+  	(size 1.7 1.7)
+  	(drill 1)
+  	(layers "*.Cu" "*.Mask")
+  	(uuid "7966593c-7b1b-4e79-bd76-4b1fa9149abb")
   )
 
-  (pad "4" thru_hole oval
-    (at -7 -9.8)
-    (size 2 2.6)
-    (drill 1)
-    (layers "*.Cu" "*.Mask")
-    (uuid "e40ef22a-56a0-4a72-a2d0-85e983dfac01")
+  (pad "2" thru_hole circle
+  	(at -4.064 9.271)
+  	(size 1.7 1.7)
+  	(drill 1)
+  	(layers "*.Cu" "*.Mask")
+  	(uuid "26384d2f-3504-4e8b-9bc6-fee095138d44")
+  )
+
+  (pad "3" thru_hole circle
+  	(at 6.604 -9.271)
+  	(size 1.7 1.7)
+  	(drill 1)
+  	(layers "*.Cu" "*.Mask")
+  	(uuid "f9ad9115-acbb-4190-8d35-74b5413950ff")
+  )
+
+  (pad "3" thru_hole circle
+  	(at 4.064 -9.271)
+  	(size 1.7 1.7)
+  	(drill 1)
+  	(layers "*.Cu" "*.Mask")
+  	(uuid "e907a501-2692-46ed-a555-0aba465a9f6c")
+  )
+
+  (pad "4" thru_hole circle
+  	(at -6.604 -9.271)
+  	(size 1.7 1.7)
+  	(drill 1)
+  	(layers "*.Cu" "*.Mask")
+  	(uuid "a1aa7795-1b19-4049-aeea-8a4223678dab")
+  )
+
+  (pad "4" thru_hole circle
+  	(at -4.064 -9.271)
+  	(size 1.7 1.7)
+  	(drill 1)
+  	(layers "*.Cu" "*.Mask")
+  	(uuid "4b27dc60-844f-456a-976a-a1c247c19df4")
   )
 
 )
